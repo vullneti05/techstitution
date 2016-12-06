@@ -1,17 +1,113 @@
 <html>
 <head>
-  <title>ARKEP</title>
+<link rel="stylesheet" type="text/css" href="static/style.css">
+<script type="text/javascript" src="static/jquery.js">
+</script>
 </head>
 <body>
-  <div id="header">
-    <h2>ARKEP</h2>
-  </div>
-  <div class="container">
-    <form method="POST">
-      <input type="text" name="field1" placeholder="Field 1"/>
-      <input type="text" name="field2" placeholder="Field 2"/>
-      <input type="submit" value="Register"/>
-    </form>
-  </div>
+<div class="wrapper">
+  <img id="logo" src="images/arkep.png" alt="arkep-rks.com" width="800px" height="200px">
+  <p style="color: #ff5722 "id="f"<b>FORMULAR I NJOFTIMIT <br>PER HYRJE NE AKTIVITETIN E KOMUNIKIMEVE ELEKTRONIKE<b></p>
+  <div class="formulari">
+  <div id="1">
+  <a href="#"><p id="titulliformes"><big> +</big> TE DHENAT PER NDERMARRESIN <big> +</big></p></a>
+  <p id="forma">
+    <br>
+<input type="text" name="emri" placeholder="Emri i Ndermarresit (Entiteti)"><br>
+    <input type="text" name="nr i biznesit" placeholder="Numri i Regjistrimit te Biznesit"><br>
+    <input type="text" name="nr fiskal" placeholder="Numri fiskal"><br>
+    <input type="text" name="adresa" placeholder="Adresa"><br>
+    <input type="text" name="nr telefonit" placeholder="Numri i Telefonit"><br>
+    <input type="text" name="nr faksit" placeholder="Numri Faksit"><br>
+    <input type="text" name="email" placeholder="E-mail adresa"><br><br><br>
+    <input type="checkbox"><font color="black" id="kushtet">Lexo kushtet dhe Pranoj ato , kliko</font>
+    <a href="#" id="pranoj"> &nbsp;&nbsp;<font color="#f44336">Ketu</font> </a><br><br>
+    <input type="submit" name="submit" value="DERGO TE DHENAT">
+    <br>
+  </p>
+</div>
+<div id="2">
+  <br><br><br><br><br><br>
+  <a href="#"><p id="titulliformes2"><big> +</big> TE DHENAT PER ZYRTARIN LIGJERISHT TE PERGJEGJESHEM <big> +</big></p></a>
+  <p id="forma2">
+    <br>
+    <input type="text" placeholder="emri"><br>
+    <input type="text" placeholder="mbiemri"><br>
+    <textarea placeholder="Pershkrimi"></textarea><br>
+    <input type="submit" name="submit" value="dergo te dhenat"><br>
+  </p>
+</div><br><br>
+<div id="3">
+  <a href="#"><p id="titulliformes3"><big> +</big> AKTIVITETET TE CILAT NJOFTOHEN/CREGJISTROHEN <big> +</big></p></a>
+  <p id="forma3">
+    <br>
+    <input type="text" placeholder="emri"><br>
+    <input type="text" placeholder="mbiemri"><br>
+    <textarea placeholder="Pershkrimi"></textarea><br>
+    <input type="submit" value="dergo te dhenat"><br>
+  </p>
+</div><br><br>
+<div id="4">
+  <a href="#"><p id="titulliformes4"><big> +</big> PERSHKRIMI I AKTIVITETIT DHE FAZA E OFRIMIT <big> +</big></p></a>
+  <p id="forma4">
+    <br>
+    <input type="text" placeholder="emri"><br>
+    <input type="text" placeholder="mbiemri"><br>
+    <textarea placeholder="Pershkrimi"></textarea><br>
+    <input type="submit" value="dergo te dhenat"><br>
+  </p>
+</div><br><br>
+<div id="5">
+  <a href="#"><p id="titulliformes5"><big> +</big> PERSHKRIMI I AKTIVITETIT DHE FAZA E OFRIMIT <big> +</big></p></a>
+  <p id="forma5">
+    <br>
+    <input type="text" placeholder="emri"><br>
+    <input type="text" placeholder="mbiemri"><br>
+    <textarea placeholder="Pershkrimi"></textarea><br>
+    <input type="submit" value="dergo te dhenat"><br>
+  </p>
+</div><br><br>
+</div>
+
+</div>
+<script type="text/javascript">
+$(document).ready(function(){
+    $("#titulliformes").click(function(){
+        $("#forma").slideToggle("slow");
+    });
+});
+$(document).ready(function(){
+    $("#titulliformes2").click(function(){
+        $("#forma2").slideToggle("slow");
+    });
+});
+$(document).ready(function(){
+    $("#titulliformes3").click(function(){
+        $("#forma3").slideToggle("slow");
+    });
+});
+$(document).ready(function(){
+    $("#titulliformes4").click(function(){
+        $("#forma4").slideToggle("slow");
+    });
+});
+
+$(document).ready(function(){
+    $("#titulliformes5").click(function(){
+        $("#forma5").slideToggle("slow");
+    });
+});
+$(document).ready(function(){
+  $("#titulliformes5").click(function(){
+    $("forma6").slideToggle("slow");
+  });
+});
+
+$(document).ready(function(){
+  $("#pranoj").click(function(){
+    alert('Une deklaroj se informacioni qe perfshihet ne deklarimin e paraqitur, sikurse qdo informacion tjeter shoqerues , esht i sakt dhe i vertet, dhe jam plotesisht i vetedijshem per faktin qe , lidhur me angazhimin ne qdo aktivitet te komunikimeve elektronike per te cilin esht e nevojshme te sigurosh te drejten e perdorimit per numeracion dhe frekuenca, te drejta te cilat nuk sigurohen nepermjet ksaj procedure, un duhet te paraqes nje aplikim per te fituar te drejtat e perdorimit te cituara me siper perpara fillimit te ofrimit te sherbimit. ');
+  });
+});
+</script>
 </body>
 </html>
