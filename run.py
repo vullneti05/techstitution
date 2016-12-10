@@ -1,18 +1,19 @@
-from flask import Flask, render_template, request
+import argparse
 
-app = Flask(__name__)
+from app import create_app
 
-@app.route('/', methods=['GET','POST'])
-def index():
-  if request.method == 'GET':
-    return render_template('index.html')
-  elif request.method == 'POST':
-    error = ""
-    field1 = request.form['field1']
-    field2 = request.form['field2']
-    if len(field1) < 6 or len(field2) < 6:
-      error = "Filan, te lutem shkruaj me shume se 6 karaktere."
-    return render_template('index.html')
+# Create the flask app.
+app = create_app()
 
+# Run the app
 if __name__ == '__main__':
-  app.run(debug=True, host='0.0.0.0', port=5555)
+
+    # Define the arguments.
+    parser = argparse.ArgumentParser()
+    parser.add_argument('--host', default='0.0.0.0', help='Host to bind to: [%(default)s].')
+    parser.add_argument('--port', type=int, default=app.config['SERVER_PORT'], help='Port to listen to: [%(default)s].')
+    parser.add_argument('--debug', action='store_true', default=False, help='Debug mode: [%(default)s].')
+
+    # Parse arguemnts and run the app.
+    args = parser.parse_args()
+    app.run(debug=args.debug, host=args.host, port=args.port)
