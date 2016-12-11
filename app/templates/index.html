@@ -5,6 +5,7 @@
 </script>
 </head>
 <body>
+
 <div class="wrapper">
   <img id="logo" src="{{url_for('static', filename="images/arkep.png")}}" alt="arkep-rks.com" width="800px" height="200px">
   <p style="color: #ff5722 " id="f"><b>FORMULAR I NJOFTIMIT <br>PER HYRJE NE AKTIVITETIN E KOMUNIKIMEVE ELEKTRONIKE<b></p>
@@ -14,11 +15,17 @@
       <p id="forma7">
         <br>
         <input type="text" name="emri" placeholder="Emri i NDERMARRESIT (Entiteti)"><br>
+        <!-- This box accept only characters-->
         <input type="text" name="adresa" placeholder="NR. I REGJ. TE BIZNESIT"><br>
-        <input type="text" name="nr telefonit" placeholder="NUMRI FISKAL"><br>
+        <!-- this box accept only numbers  max 12-->
+        <input type="text" name="nr fiskal" placeholder="NUMRI FISKAL"><br>
+        <!-- this box accept carachters and numbers -->
         <input type="text" name="nr faksit" placeholder="ADRESA"><br>
+        <!--this box accept only numbers max  9 numbers -->
         <input type="text" name="email" placeholder="NUMRI I TELEFONIT"><br>
-        <input type="text" name="nr ID" placeholder="NUMRI I FAKSIT"><br>
+        <!--this box accept only numbers max  9 numbers -->
+            <input type="text" name="nr ID" placeholder="NUMRI I FAKSIT"><br>
+            <!--this box accept numbers and characters numbers -->
         <input type="text" name="nr ID" placeholder="E-MAIL ADRESA"><br>
         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  <input id="kushtet1"type="checkbox"><font color="black" id="kushtet"  class="kushtet2">Pranoj , </font>
@@ -31,11 +38,17 @@
 <div id="2"><p id="titulliformes2"> TE DHENAT PER ZYRTARIN LIGJERISHT TE PERGJEGJESHEM </p>
   <div id="forma2">
     <br>
-    <input type="text" name="emri" placeholder="Emri i Zyrtarit"><br>
+    <!--this box accept only characters  -->
+<input type="text" name="emri" placeholder="Emri i Zyrtarit"><br>
+<!-- this box accept carachters and numbers -->
     <input type="text" name="adresa" placeholder="Adresa"><br>
+    <!--this box accept only numbers max  9 numbers -->
     <input type="text" name="nr telefonit" placeholder="Numri i Telefonit"><br>
+    <!--this box accept only numbers max  9 numbers -->
     <input type="text" name="nr faksit" placeholder="Numri Faksit"><br>
+    <!--this box accept numbers and characters numbers -->
     <input type="text" name="email" placeholder="E-mail adresa"><br>
+    <!--this box accept only numbers max 5 -->
     <input type="text" name="nr ID" placeholder="Numri ID"><br>
       <div id="dergo">
   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
@@ -65,7 +78,6 @@
       <textarea id="textarea" placeholder="specifikimi i sherbimeve te tjera , Specifiko Sherbimet Tjera ketu." > </textarea>
     </select>
   </p>
-
   <p id="ofrimi11">&nbsp;Ofrimi i rrjetit publik mobil&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
    <select id="" style="margin-left:110px">
      <option id="a" value="test"> Lokal</option>
