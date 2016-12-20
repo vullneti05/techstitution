@@ -1,327 +1,356 @@
 <html>
 <head>
-<link rel="stylesheet" type="text/css" href="{{ url_for('static' , filename="style.css")}}">
-<script type="text/javascript" src="{{ url_for('static' , filename="jquery.js") }}">
-</script>
+
+	<head>
+		<titulli>Formulari</titulli>
+		 <!--Import Google Icon Font-->
+		 <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+		 <!--Import materialize.css-->
+
+		 <link rel=stylesheet type=text/css href="{{ url_for('static', filename='materialize.min.css') }}"" media="screen,projection>
+		 <link rel=stylesheet type=text/css href="{{ url_for('static', filename='css/style.css') }}">
+		 <!--Let browser know website is optimized for mobile-->
+		 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+	 </head>
 </head>
-<body>
+<body class="container">
 
-<div class="wrapper">
-  <img id="logo" src="{{url_for('static', filename="images/arkep.png")}}" alt="arkep-rks.com" width="800px" height="200px">
-  <p style="color: #ff5722 " id="f"><b>FORMULAR I NJOFTIMIT <br>PER HYRJE NE AKTIVITETIN E KOMUNIKIMEVE ELEKTRONIKE<b></p>
-  <div class="formulari">
-    <div id="a4">
-    <div id="titulliformes6"> TE DHENAT PER NDERMARRESIN </div>
-      <p id="forma7">
-        <br>
-        <input type="text" name="emri" placeholder="Emri i NDERMARRESIT (Entiteti)"><br>
-        <!-- This box accept only characters-->
-        <input type="text" name="adresa" placeholder="NR. I REGJ. TE BIZNESIT"><br>
-        <!-- this box accept only numbers  max 12-->
-        <input type="text" name="nr fiskal" placeholder="NUMRI FISKAL"><br>
-        <!-- this box accept carachters and numbers -->
-        <input type="text" name="nr faksit" placeholder="ADRESA"><br>
-        <!--this box accept only numbers max  9 numbers -->
-        <input type="text" name="email" placeholder="NUMRI I TELEFONIT"><br>
-        <!--this box accept only numbers max  9 numbers -->
-            <input type="text" name="nr ID" placeholder="NUMRI I FAKSIT"><br>
-            <!--this box accept numbers and characters numbers -->
-        <input type="text" name="nr ID" placeholder="E-MAIL ADRESA"><br>
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  <input id="kushtet1"type="checkbox"><font color="black" id="kushtet"  class="kushtet2">Pranoj , </font>
-        <font color="#f44336" id="pranoj1">Kushtet<br></font>
+		<img id="logo" src="{{ url_for('static', filename='images/logo.png')}}"><br><br>
+	<div id="wrapper">
+		<font color="#ffffff"><p id="nentitulli">Formular i Njoftimit per Hyrje ne aktivitetin e Komunikimeve Elektronike</p></font>
+		<form method="POST">
+	    <div class="collection waves-color-demo">
+				<div class="collection-item">
+		    <code  class=" language-markup">TE DHENAT PER NDERMARRESIN: </code>
+            <a href="#!" id="ploteso1" class="waves-effect waves-light grey darken-3 btn secondary-content" style="text-shadow: 0 2px 0 black;">&nbsp;&nbsp;&nbsp;<b>I </b> Ploteso Te dhenat </a>
+         </div>
+				 <br>
+				 <div id="form1">
+				 <div class="input-field col s6">
+				 <input id="first_name" type="text" class="validate" >
+				 <label for="emri_ndermarresit">Emri i Ndermarresit</label>
+			 </div>
+			 <div class="input-field col s6">
+				 <input id="last_name" type="text" class="validate">
+				 <label for="numri_biznesit">Numri i Regjistrimit te Biznesit</label>
+			 </div>
+			 <div class="input-field col s6">
+				 <input id="last_name" type="text" class="validate">
+				 <label for="numri_biznesit">Numri Fiskal</label>
+			 </div>
+			 <div class="input-field col s6">
+				 <input id="last_name" type="text" class="validate">
+				 <label for="adresa">Adresa</label>
+			 </div>
+			 <div class="input-field col s6">
+				 <input id="last_name" type="text" class="validate">
+				 <label for="numritelefonit">Numri i Telefonit</label>
+			 </div>
+			 <div class="input-field col s6">
+				 <input id="last_name" type="text" class="validate">
+				 <label for="numri_faksit">Numri i Faksit</label>
+			 </div>
+			 <div class="input-field col s6">
+				 <input id="last_name" type="text" class="validate">
+				 <label for="email">Email adresa</label><br><br><br>
+			 </div>
+		 </div>
 
-      <br>  <input type="submit" name="submit"value="DERGO TE DHENAT">
+				 			<div class="collection-item">
+				 			<code  class=" language-markup">TE DHENAT PER ZYRTARIN LIGJERISHT TE PERGJEGJESHEM: </code>
+							<a href="#!" id="ploteso2" class="waves-effect waves-light grey darken-3 btn secondary-content" style="text-shadow: 0 2px 0 black;">&nbsp;&nbsp;<b>II </b> Ploteso Te dhenat </a>
+							</div>
+				 <br>
+							<div id="form2">
+							<div class="input-field col s6">
+							<input id="first_name" type="text" class="validate">
+							<label for="emri_zyrtarit">Emri i zyrtarit</label>
+						</div>
+						<div class="input-field col s6">
+							<input id="last_name" type="text" class="validate">
+							<label for="Adresa2">Adresa</label>
+						</div>
+						<div class="input-field col s6">
+							<input id="last_name" type="text" class="validate">
+							<label for="nr_tel2">Numri i Telefonit</label>
+						</div>
+						<div class="input-field col s6">
+							<input id="last_name" type="text" class="validate">
+							<label for="nr_faks2">Numri i Faksit</label>
+						</div>
+						<div class="input-field col s6">
+							<input id="last_name" type="text" class="validate">
+							<label for="email2">Email adresa</label>
+						</div>
+						<div class="input-field col s6">
+							<input id="last_name" type="text" class="validate">
+							<label for="nr_ID2">Numri i ID</label><br><br><br>
+						</div>
+					</div>
 
-      </p>
-    </div><br><br><br>
-<div id="2"><p id="titulliformes2"> TE DHENAT PER ZYRTARIN LIGJERISHT TE PERGJEGJESHEM </p>
-  <div id="forma2">
-    <br>
-    <!--this box accept only characters  -->
-<input type="text" name="emri" placeholder="Emri i Zyrtarit"><br>
-<!-- this box accept carachters and numbers -->
-    <input type="text" name="adresa" placeholder="Adresa"><br>
-    <!--this box accept only numbers max  9 numbers -->
-    <input type="text" name="nr telefonit" placeholder="Numri i Telefonit"><br>
-    <!--this box accept only numbers max  9 numbers -->
-    <input type="text" name="nr faksit" placeholder="Numri Faksit"><br>
-    <!--this box accept numbers and characters numbers -->
-    <input type="text" name="email" placeholder="E-mail adresa"><br>
-    <!--this box accept only numbers max 5 -->
-    <input type="text" name="nr ID" placeholder="Numri ID"><br>
-      <div id="dergo">
-  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-  <p id="kushtet">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input id="kushtet1" type="checkbox">Pranoj , <font color="#f44336" id="pranoj2" >Kushtet</font></p>
+					 <div class="collection-item">
+					<code  class=" language-markup" >AKTIVITETET TE CILAT NJOFTOHEN/CREGJISTROHEN: </code>
+							 <a href="#!" id="ploteso3" class="waves-effect waves-light grey darken-3 btn secondary-content" style="text-shadow: 0 2px 0 black;"><b>III </b> Ploteso Te dhenat </a>
+						</div>
+						<br>
+						<div id="form3" action="#">
+				  <table>
+				    <thead>
+				      <tr>
 
-    <input type="submit" name="submit" value="DERGO TE DHENAT">
-  </div>
+				        <th>Aktiviteti</th>
+				        <th>Lloji</th>
+				      </tr>
+				    </thead>
+				    <tbody>
+				      <tr>
+				        <td>Ofrimi i rrjetit publik fiks</td>
+				        <td>
+									<label>
+										<input type="checkbox" class="filled-in checkbox-orange" id="filled-in-box1" />
+										<label for="filled-in-box1">Lokal</label>
+									</label>
+									<br>
+									<label>
+										<input type="checkbox" class="filled-in checkbox-orange" id="filled-in-box2" />
+											<label for="filled-in-box2">Nacional</label>
+										</label>
+										<br>
+										<label>
+											<input type="checkbox" class="filled-in checkbox-orange" id="filled-in-box3"  />
+												<label for="filled-in-box3">Tjera ( Specifikoj )</label>
+											</label>
+								</td>
+							</tr>
+				    </tbody><br>
+						<tbody>
+							<tr>
+								<td>Ofrimi i sherbimeve publike fikse</td>
+								<td>
+									<label>
+										<input type="checkbox" class="filled-in checkbox-orange" id="filled-in-box4" />
+										<label for="filled-in-box4"> Sherbime telefonike lokale/nacionale</label>
+									</label>
+									<br>
+									<label>
+										<input type="checkbox" class="filled-in checkbox-orange" id="filled-in-box5"  />
+											<label for="filled-in-box5">Sherbime telefonike nderkombetare</label>
+										</label>
+										<br>
+										<label>
+											<input type="checkbox" class="filled-in checkbox-orange" id="filled-in-box6" />
+												<label for="filled-in-box6">Telefona publik me pagese</label>
+											</label>
+												<br>
+											<label>
+												<input type="checkbox" class="filled-in checkbox-orange" id="filled-in-box7"  />
+													<label for="filled-in-box7">Sherbime Tjera ( specifikoj )</label>
+												</label>
+											</td>
+										</tr>
+									</tbody>
+									<tbody>
+							<tr>
+								<td>Ofrimi i rrjetit publik mobil</td>
+								<td>
+									<label>
+										<input type="checkbox" class="filled-in checkbox-orange" id="filled-in-box8"  />
+										<label for="filled-in-box8"> Lokal</label>
+									</label>
+									<br>
+									<label>
+										<input type="checkbox" class="filled-in checkbox-orange" id="filled-in-box9" />
+											<label for="filled-in-box9"> Nacional</label>
+										</label>
+								</td>
+							</tr>
+						</tbody>
+						<tbody>
+							<tr>
+								<td>Ofrimi i sherbimeve publike mobile</td>
+								<td>
+									<label>
+										<input type="checkbox" class="filled-in checkbox-orange" id="filled-in-box10"/>
+										<label for="filled-in-box10">  Sherbime telefonike te zerit</label>
+									</label>
+									<br>
+									<label>
+										<input type="checkbox" class="filled-in checkbox-orange" id="filled-in-box11"  />
+											<label for="filled-in-box11">Transmetim te dhenash</label>
+										</label>
+								</td>
+							</tr>
+						</tbody>
+						<tbody>
+							<tr>
+								<td>Ofrimi i sherbimeve te linjave me qira</td>
+								<td>
+									<label>
+										<input type="checkbox" class="filled-in checkbox-orange" id="filled-in-box12"  />
+										<label for="filled-in-box12">  Fiber optik te pa-ndriquar</label>
+									</label>
+									<br>
+									<label>
+										<input type="checkbox" class="filled-in checkbox-orange" id="filled-in-box13"  />
+											<label for="filled-in-box13">	Linja tjera me qira</label>
+										</label>
+								</td>
+							</tr>
+						</tbody>
+						<tbody>
+							<tr>
+								<td>Ofrimi i rrjetave publike me transmetim satelitor</td>
+								<td>
+									<label>
+										<input type="checkbox" class="filled-in checkbox-orange" id="filled-in-box14"  />
+										<label for="filled-in-box14">   Ofrimi i rrjetave publike me transmetim satelitor</label>
+									</label>
+								</td>
+							</tr>
+						</tbody>
+						<tbody>
+							<tr>
+								<td>Ofrimi i sherbimeve te transmetimit te te dhenave (Internetit)</td>
+								<td>
+									<label>
+										<input type="checkbox" class="filled-in checkbox-orange" id="filled-in-box15"  />
+										<label for="filled-in-box15"> Ofrimi i sherbimeve publike te transmetimit te te dhenave (internetit)</label>
+									</label>
+								</td>
+							</tr>
+						</tbody>
+						<tbody>
+							<tr>
+								<td>Ofrimi i sherbimeve me vlere te shtuar</td>
+								<td>
+									<label>
+										<input type="checkbox" class="filled-in checkbox-orange" id="filled-in-box16" />
+										<label for="filled-in-box16"> Ofrimi i sherbimeve me vlere te shtuar</label><br><br><br>
+									</label>
+								</td>
+							</tr>
+						</tbody>
+				  </table>
+				</div>
 
-  </div>
-</div><br><br><br>
+				<div class="collection-item">
+			 <code  class=" language-markup" >PERSHKRIMI I AKTIVITETIT DHE FAZA E OFRIMIT </code>
+						<a href="#!" id="ploteso4" class="waves-effect waves-light grey darken-3 btn secondary-content" style="text-shadow: 0 2px 0 black;"><b>III </b> Ploteso Te dhenat </a>
+				 </div>
+				 <br>
+				 <div id="form4" action="#">
+					 <span id="pershkrimi">  Pershkrimi i rrjetit dhe/ose sherbimit qe do te ofrohet:</span><br>
+					 <span id="pershkrimi2"> ( Te jepen pershkrime te detajuara per secilin aktivitet te njoftuar duke specifikua )</span>
+					 <div id="majtas">
+					<ul>
+							 <li>A do te perdoret rrjeti vetanak apo ndonje rrjet tjeter,</li>
+							 <li>Teknologjia e cila do te perdoret,</li>
+							 <li>Radio frekuencat, te cilat planifikohen te perdoren</li>
+						 <li>Lista e sherbimeve qe planifikohen te ofrohen,</li>
+						 <li>te tjera...</li>
+						 </ul>
 
-  <div id="3"><p id="titulliformes3">AKTIVITETET TE CILAT NJOFTOHEN/CREGJISTROHEN </p>
-    <p id="ofrimi1" style="">&nbsp;Ofrimi i Rrjetit Publik Fiks&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-   <select style="margin-left:100px;">
-     <option id="lokal" value="test"> Lokal</option>
-     <option id="nacional" value="test2"> Nacional</option>
-     <option  id="tjera" value="test2"> Te Tjera</option>
-     <hr>
-   </select></p>
-   <p id="ofrimi2">&nbsp;Ofrimi i Sherbimeve Publike Fikse
-    <select>
-      <option id="a"value="test"> Zgjedh Sherbimet</option>
-      <option id="b" value="test"> Sherbime telefonike lokale/nacionale</option>
-      <option  id="c"value="test2"> Sherbimet telefonike nderkombetare</option>
-      <option  id="c"value="test2"> Telefona publik me pagese</option>
-      <option  id="specifikimi"value="test2"> Sherbime tjera</option>
-      <textarea id="textarea" placeholder="specifikimi i sherbimeve te tjera , Specifiko Sherbimet Tjera ketu." > </textarea>
-    </select>
-  </p>
-  <p id="ofrimi11">&nbsp;Ofrimi i rrjetit publik mobil&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-   <select id="" style="margin-left:110px">
-     <option id="a" value="test"> Lokal</option>
-     <option id="b" value="test"> Nacional</option>
-   </select>
-  </p>
+					 </div>
+					 <div id="djathtas">
+						 <textarea id="txta1" placeholder="( Te jepen pershkrime te detajuara per secilin aktivitet te njoftuar duke specifikua )"></textarea>
+					 </div>
+				<br><br><br><br><br><br><br><br><br><br>	 </div>
 
-<p id="ofrimi4">&nbsp;Ofrimi i Sherbimeve publike mobile
-  <select style="margin-left:85px;">
-   <option id="a"value="test"> Sherbime telefonike te zerit</option>
-   <option id="b" value="test"> Transmetim te dhenash</option>
- </select>
-</p>
-<p id="ofrimi5">&nbsp;Ofrimi i sherbimeve te linjave me qira
-  <select style="margin-left:65px;">
-   <option id="a"value="test"> Fiber optik te pa-ndriquar</option>
-   <option id="b" value="test"> Linja tjera me qira</option>
- </select>
-</p>
-<p id="ofrimi6">&nbsp;Ofrimi i i rrjetave publike me transmetim satelitor
-  <br><font color="black"><input type="checkbox" id="sd"value="ofrimi">Ofrimi i i rrjetave publike me transmetim satelitor</font>
+			 <div class="collection-item">
+	 <code  class=" language-markup">DOKUMENTAT E BASHKANGJITURA: </code>
+					 <a href="#!" id="ploteso5" class="waves-effect waves-light grey darken-3 btn secondary-content" style="text-shadow: 0 2px 0 black;">&nbsp;&nbsp;&nbsp;<b>I </b> Ploteso Te dhenat </a>
+				</div>
+				<br>
+				<div id="form5">
+					<div class="row">
+		<form class="col s12">
+			 <div class="row">
+					<label>&nbsp;&nbsp;&nbsp;&nbsp;<font color="black">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Kopje e Certifikates se Regjistrimit te Biznesit</font></label><br><br>
+					<div class="file-field input-field">
+						 <div class="waves-light grey darken-3 btn">
+								<span> Ngarko</span>
+								<input type="file">
+						 </div>
+						 <div class="file-path-wrapper">
+								<input class="file-path validate" type="text" placeholder="Ngarko Kopjen e Certifikates se Regjistrimit te Biznesit">
+						 </div>
+					</div>
+			 </div>
+			 <div class="row">
+					<label>&nbsp;&nbsp;&nbsp;&nbsp;<font color="black">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Kopje e Certifikates se Numrit Fiskal</font></label><br><br>
+					<div class="file-field input-field">
+						 <div class="waves-light grey darken-3 btn">
+								<span> Ngarko</span>
+								<input type="file">
+						 </div>
+						 <div class="file-path-wrapper">
+								<input class="file-path validate" type="text" placeholder="Ngarko kopjen e Certifikates se Numrit Fiskal">
+						 </div>
+					</div>
+			 </div>
+			 <div class="row">
+					<label>&nbsp;&nbsp;&nbsp;&nbsp;<font color="black">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Kopje e Dokumentit , Informate mbi biznesin</font></label><br><br>
+					<div class="file-field input-field">
+						 <div class="waves-light grey darken-3 btn">
+								<span> Ngarko</span>
+								<input type="file">
+						 </div>
+						 <div class="file-path-wrapper">
+								<input class="file-path validate " type="text" placeholder="Ngarko kopjen e Dokumentit , Informaten mbi Biznes">
+						 </div>
+					</div>
+			 </div>
+				<br><br><br>
+			</div>
+		</div>
+
+		<div class="collection waves-color-demo">
+			<div class="collection-item">
+			<code  class=" language-markup">KONFIRMIMI I NJOFTIMIT: </code>
+					<a href="#!" id="ploteso6" class="waves-effect waves-light grey darken-3 btn secondary-content" style="text-shadow: 0 2px 0 black;">&nbsp;&nbsp;&nbsp;<b>I </b> Ploteso Te dhenat </a>
+			 </div>
+			 <br>
+			 <div id="form6">
+				 <div class="row">
+					 <span id="forma6">&nbsp;&nbsp;&nbsp; Ndermarrja kerkon qe ti leshohet certifikata e konfirmimit te njoftimit	 per ofrimin e rrjeteve</span>
+						<span> &nbsp;&nbsp;&nbsp;&nbsp;dhe/ose  sherbimeve publike te komunikimeve elektronike te njoftuara permes ketij formulari: </span><br>
+						 <div class="cakto">
+							 <br>
+							 <input type="checkbox" id="PO" />
+						 <label for="PO" id="PO-label">PO</label>
+						 <input type="checkbox" id="JO" />
+					 <label for="JO" id="JO-label">JO</label>
+	 							 </div>
+							 </div>
 <br>
-</p>
-<p id="ofrimi7">&nbsp;Ofrimi i sherbimeve publike satelitore
-    <br><font color="black"><input type="checkbox" id="sd"value="ofrimi">Ofrimi i sherbimeve publike satelitore</font>
-<br>
-</p>
-<p id="ofrimi12">&nbsp;Ofrimi i sherbimeve te transmetimit te te dhenave (Internetit)
-     <br><font color="black"><input type="checkbox" id="sd"value="ofrimi">Ofrimi i sherbimeve te transmetimit te te dhenave (Internetit)</font>
-<br>
-</p>
-<p id="ofrimi8">&nbsp;Ofrimi i sherbimeve me vlere te shtuar
-  <br><font color="black"><input type="checkbox" id="sd"value="ofrimi">Ofrimi i sherbimeve me vlere te shtuar</font>
-</p>
-<div id="pranoj22">
- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color="black" id="kushtet"><input id="kushtet1" type="checkbox">Pranoj ,</font>
-<font color="#f44336" id="pranoj5" >Kushtet</font></p><br><br>
-<input type="submit" name="submit" value="DERGO TE DHENAT">
-</div>
-</div>
-</div><br><br><br>
-  <p id="titulliformes7"> TE DHENAT PER ZYRTARIN LIGJERISHT TE PERGJEGJESHEM </p>
-  <div id="ofrimi13">
-  <p id="forma2">
-    <br>
-<div id="majtas">
-      <ul id="pershkrime">
-      <li>A do te perdoret rrjeti vetanak apo ndonje rrjet tjeter,</li><br>
-         <li>Teknologjia e cila do te perdoret,</li><br>
-         <li>Radio frekuencat, te cilat planifikohen te perdoren,</li><br>
-       <li>Lista e sherbimeve qe planifikohen te ofrohen,<br> Dhe te tjerat</li>
-       </ul>
-</div>
-<div id="djathtas">
-  <textarea id="textareadjathtas" placeholder="Te jepen pershkrime te detajuara per secilin aktivitet
- te njoftuar duke specifikuar: "></textarea>
-</div><br>
- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-<input id="kushtet1"type="checkbox"><font color="black" id="kushtet">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Pranoj , </font>
-<font color="#f44336" id="pranoj6" >Kushtet</font><br><br>
-&nbsp;&nbsp;&nbsp;&nbsp;
-<input type="submit" name="submit" value="DERGO TE DHENAT"><br>
-  </p>
+    <button class="btn btn-primary btn-lg waves-effect waves-light" id="submit" type="submit">Submit</button>
+	</form>
+		</div>
+      </div>
+			<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+			<script type="text/javascript" src="{{url_for('static' , filename=' materialize.min.js ')}}"></script>
 
-</div><br>
-
-</div>
-<script type="text/javascript">
+			<script>
 $(document).ready(function(){
-    $("#titulliformes").click(function(){
-        $("#forma6").slideToggle("slow");
+    $("#ploteso1").click(function(){
+        $("#form1").slideToggle("slow");
     });
+		$("#ploteso2").click(function(){
+				$("#form2").slideToggle("slow");
+		});
+		$("#ploteso3").click(function(){
+			$("#form3").slideToggle("slow");
+		});
+		$("#ploteso4").click(function(){
+			$("#form4").slideToggle("slow");
+		});
+		$("#ploteso5").click(function(){
+			$("#form5").slideToggle("slow");
+		});
+		$("#ploteso6").click(function(){
+			$("#form6").slideToggle("slow");
+		});
 });
-$(document).ready(function(){
-    $("#titulliformes6").click(function(){
-        $("#forma7").slideToggle("slow");
-    });
-});
-$(document).ready(function(){
-    $("#titulliformes2").click(function(){
-        $("#forma2").slideToggle("slow");
-    });
-});
-$(document).ready(function(){
-    $("#titulliformes3").click(function(){
-        $("#ofrimi1").slideToggle("slow");
-    });
-});
-
-$(document).ready(function(){
-    $("#titulliformes3").click(function(){
-        $("#ofrimi2").slideToggle("slow");
-    });
-});
-$(document).ready(function(){
-    $("#titulliformes3").click(function(){
-        $("#pranoj22").slideToggle("slow");
-    });
-});
-$(document).ready(function(){
-    $("#titulliformes3").click(function(){
-        $("#ofrimi4").slideToggle("slow");
-    });
-});
-
-$(document).ready(function(){
-    $("#titulliformes3").click(function(){
-        $("#ofrimi5").slideToggle("slow");
-    });
-});
-
-$(document).ready(function(){
-    $("#titulliformes3").click(function(){
-        $("#ofrimi6").slideToggle("slow");
-    });
-});
-
-$(document).ready(function(){
-    $("#titulliformes3").click(function(){
-        $("#ofrimi7").slideToggle("slow");
-    });
-});
-
-$(document).ready(function(){
-    $("#titulliformes3").click(function(){
-        $("#ofrimi8").slideToggle("slow");
-    });
-});
-
-$(document).ready(function(){
-    $("#titulliformes3").click(function(){
-        $("#ofrimi10").slideToggle("slow");
-    });
-});
-
-$(document).ready(function(){
-    $("#titulliformes3").click(function(){
-        $("#ofrimi11").slideToggle("slow");
-    });
-});
-
-$(document).ready(function(){
-    $("#titulliformes3").click(function(){
-        $("#ofrimi12").slideToggle("slow");
-    });
-});
-
-$(document).ready(function(){
-    $("#titulliformes4").click(function(){
-        $("#forma4").slideToggle("slow");
-    });
-});
-
-$(document).ready(function(){
-    $("#titulliformes5").click(function(){
-        $("#forma5").slideToggle("slow");
-    });
-});
-
-$(document).ready(function(){
-    $("#titulliformes").click(function(){
-        $("#forma6").slideToggle("slow");
-    });
-});
-$(document).ready(function(){
-    $("#titulliformes7").click(function(){
-        $("#ofrimi13").slideToggle("slow");
-    });
-});
-$(document).ready(function(){
-  $("#specifikimi").click(function(){
-    $("textarea").slideToggle("slow");
-  });
-});
-$(document).ready(function(){
-  $("#titulliformes5").click(function(){
-    $("forma6").slideToggle("slow");
-  });
-});
-
-$(document).ready(function(){
-  $("#pranoj1").click(function(){
-    alert('Une deklaroj se informacioni qe perfshihet ne deklarimin e paraqitur, sikurse qdo informacion tjeter shoqerues , esht i sakt dhe i vertet, dhe jam plotesisht i vetedijshem per faktin qe , lidhur me angazhimin ne qdo aktivitet te komunikimeve elektronike per te cilin esht e nevojshme te sigurosh te drejten e perdorimit per numeracion dhe frekuenca, te drejta te cilat nuk sigurohen nepermjet ksaj procedure, un duhet te paraqes nje aplikim per te fituar te drejtat e perdorimit te cituara me siper perpara fillimit te ofrimit te sherbimit. ');
-  });
-});
-$(document).ready(function(){
-  $("#pranoj2").click(function(){
-    alert('Une deklaroj se informacioni qe perfshihet ne deklarimin e paraqitur, sikurse qdo informacion tjeter shoqerues , esht i sakt dhe i vertet, dhe jam plotesisht i vetedijshem per faktin qe , lidhur me angazhimin ne qdo aktivitet te komunikimeve elektronike per te cilin esht e nevojshme te sigurosh te drejten e perdorimit per numeracion dhe frekuenca, te drejta te cilat nuk sigurohen nepermjet ksaj procedure, un duhet te paraqes nje aplikim per te fituar te drejtat e perdorimit te cituara me siper perpara fillimit te ofrimit te sherbimit. ');
-  });
-});
-
-$(document).ready(function(){
-  $("#pranoj3").click(function(){
-    alert('Une deklaroj se informacioni qe perfshihet ne deklarimin e paraqitur, sikurse qdo informacion tjeter shoqerues , esht i sakt dhe i vertet, dhe jam plotesisht i vetedijshem per faktin qe , lidhur me angazhimin ne qdo aktivitet te komunikimeve elektronike per te cilin esht e nevojshme te sigurosh te drejten e perdorimit per numeracion dhe frekuenca, te drejta te cilat nuk sigurohen nepermjet ksaj procedure, un duhet te paraqes nje aplikim per te fituar te drejtat e perdorimit te cituara me siper perpara fillimit te ofrimit te sherbimit. ');
-  });
-});
-$(document).ready(function(){
-  $("#pranoj4").click(function(){
-    alert('Une deklaroj se informacioni qe perfshihet ne deklarimin e paraqitur, sikurse qdo informacion tjeter shoqerues , esht i sakt dhe i vertet, dhe jam plotesisht i vetedijshem per faktin qe , lidhur me angazhimin ne qdo aktivitet te komunikimeve elektronike per te cilin esht e nevojshme te sigurosh te drejten e perdorimit per numeracion dhe frekuenca, te drejta te cilat nuk sigurohen nepermjet ksaj procedure, un duhet te paraqes nje aplikim per te fituar te drejtat e perdorimit te cituara me siper perpara fillimit te ofrimit te sherbimit. ');
-  });
-});
-$(document).ready(function(){
-  $("#pranoj5").click(function(){
-    alert('Une deklaroj se informacioni qe perfshihet ne deklarimin e paraqitur, sikurse qdo informacion tjeter shoqerues , esht i sakt dhe i vertet, dhe jam plotesisht i vetedijshem per faktin qe , lidhur me angazhimin ne qdo aktivitet te komunikimeve elektronike per te cilin esht e nevojshme te sigurosh te drejten e perdorimit per numeracion dhe frekuenca, te drejta te cilat nuk sigurohen nepermjet ksaj procedure, un duhet te paraqes nje aplikim per te fituar te drejtat e perdorimit te cituara me siper perpara fillimit te ofrimit te sherbimit. ');
-  });
-});
-$(document).ready(function(){
-  $("#pranoj6").click(function(){
-    alert('Une deklaroj se informacioni qe perfshihet ne deklarimin e paraqitur, sikurse qdo informacion tjeter shoqerues , esht i sakt dhe i vertet, dhe jam plotesisht i vetedijshem per faktin qe , lidhur me angazhimin ne qdo aktivitet te komunikimeve elektronike per te cilin esht e nevojshme te sigurosh te drejten e perdorimit per numeracion dhe frekuenca, te drejta te cilat nuk sigurohen nepermjet ksaj procedure, un duhet te paraqes nje aplikim per te fituar te drejtat e perdorimit te cituara me siper perpara fillimit te ofrimit te sherbimit. ');
-  });
-});
-$(document).ready(function(){
-    $("#specifikimi").click(function(){
-        $("#textarea").slideDown("slow");
-    });
-});
-$(document).ready(function(){
-    $("#a").click(function(){
-        $("#textarea").hide("slow");
-    });
-});
-$(document).ready(function(){
-    $("#b").click(function(){
-        $("#textarea").hide("slow");
-    });
-});
-$(document).ready(function(){
-    $("#c").click(function(){
-        $("#textarea").hide("slow");
-    });
-});
-$(document).ready(function(){
-    $("#d").click(function(){
-        $("#textarea").hide("slow");
-    });
-});
-
 </script>
-</body>
+   </body>
 </html>

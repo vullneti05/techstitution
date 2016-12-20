@@ -1,0 +1,17 @@
+
+<table style="width:100%">
+<tr>
+<th>Company Name</th>
+<th>Address</th>
+</tr>
+{% for item in documentat %}
+<tr>
+<th>{{ item['emri'] }}</th>
+<th>{{ item['adresa'] }}</th>
+<td>
+<a href="{{url_for('main.get_doc',id=item._id)}}">View</a>
+<a href="{{url_for('main.remove_doc',id=item._id)}}">Delete</a>
+</td>
+</tr>
+{% endfor %}
+</table>

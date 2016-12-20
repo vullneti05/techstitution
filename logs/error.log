@@ -1,0 +1,486 @@
+Exception on / [GET]
+Traceback (most recent call last):
+  File "/root/Desktop/techstitution/venv/local/lib/python2.7/site-packages/flask/app.py", line 1817, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/root/Desktop/techstitution/venv/local/lib/python2.7/site-packages/flask/app.py", line 1477, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/root/Desktop/techstitution/venv/local/lib/python2.7/site-packages/flask/app.py", line 1381, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/root/Desktop/techstitution/venv/local/lib/python2.7/site-packages/flask/app.py", line 1475, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/root/Desktop/techstitution/venv/local/lib/python2.7/site-packages/flask/app.py", line 1461, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+TypeError: get_doc() takes exactly 1 argument (0 given)
+Exception on / [GET]
+Traceback (most recent call last):
+  File "/root/Desktop/techstitution/venv/local/lib/python2.7/site-packages/flask/app.py", line 1817, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/root/Desktop/techstitution/venv/local/lib/python2.7/site-packages/flask/app.py", line 1477, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/root/Desktop/techstitution/venv/local/lib/python2.7/site-packages/flask/app.py", line 1381, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/root/Desktop/techstitution/venv/local/lib/python2.7/site-packages/flask/app.py", line 1475, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/root/Desktop/techstitution/venv/local/lib/python2.7/site-packages/flask/app.py", line 1461, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+TypeError: get_doc() takes exactly 1 argument (0 given)
+Exception on / [GET]
+Traceback (most recent call last):
+  File "/root/Desktop/techstitution/venv/local/lib/python2.7/site-packages/flask/app.py", line 1817, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/root/Desktop/techstitution/venv/local/lib/python2.7/site-packages/flask/app.py", line 1477, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/root/Desktop/techstitution/venv/local/lib/python2.7/site-packages/flask/app.py", line 1381, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/root/Desktop/techstitution/venv/local/lib/python2.7/site-packages/flask/app.py", line 1475, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/root/Desktop/techstitution/venv/local/lib/python2.7/site-packages/flask/app.py", line 1461, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+TypeError: get_doc() takes exactly 1 argument (0 given)
+Exception on / [GET]
+Traceback (most recent call last):
+  File "/root/Desktop/techstitution/venv/local/lib/python2.7/site-packages/flask/app.py", line 1817, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/root/Desktop/techstitution/venv/local/lib/python2.7/site-packages/flask/app.py", line 1477, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/root/Desktop/techstitution/venv/local/lib/python2.7/site-packages/flask/app.py", line 1381, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/root/Desktop/techstitution/venv/local/lib/python2.7/site-packages/flask/app.py", line 1475, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/root/Desktop/techstitution/venv/local/lib/python2.7/site-packages/flask/app.py", line 1461, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+TypeError: get_doc() takes exactly 1 argument (0 given)
+Exception on / [GET]
+Traceback (most recent call last):
+  File "/root/Desktop/techstitution/venv/local/lib/python2.7/site-packages/flask/app.py", line 1817, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/root/Desktop/techstitution/venv/local/lib/python2.7/site-packages/flask/app.py", line 1477, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/root/Desktop/techstitution/venv/local/lib/python2.7/site-packages/flask/app.py", line 1381, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/root/Desktop/techstitution/venv/local/lib/python2.7/site-packages/flask/app.py", line 1475, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/root/Desktop/techstitution/venv/local/lib/python2.7/site-packages/flask/app.py", line 1461, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+TypeError: get_doc() takes exactly 1 argument (0 given)
+Exception on / [GET]
+Traceback (most recent call last):
+  File "/root/Desktop/techstitution/venv/local/lib/python2.7/site-packages/flask/app.py", line 1817, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/root/Desktop/techstitution/venv/local/lib/python2.7/site-packages/flask/app.py", line 1477, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/root/Desktop/techstitution/venv/local/lib/python2.7/site-packages/flask/app.py", line 1381, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/root/Desktop/techstitution/venv/local/lib/python2.7/site-packages/flask/app.py", line 1475, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/root/Desktop/techstitution/venv/local/lib/python2.7/site-packages/flask/app.py", line 1461, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+TypeError: get_doc() takes exactly 1 argument (0 given)
+Exception on / [GET]
+Traceback (most recent call last):
+  File "/root/Desktop/techstitution/venv/local/lib/python2.7/site-packages/flask/app.py", line 1817, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/root/Desktop/techstitution/venv/local/lib/python2.7/site-packages/flask/app.py", line 1477, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/root/Desktop/techstitution/venv/local/lib/python2.7/site-packages/flask/app.py", line 1381, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/root/Desktop/techstitution/venv/local/lib/python2.7/site-packages/flask/app.py", line 1475, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/root/Desktop/techstitution/venv/local/lib/python2.7/site-packages/flask/app.py", line 1461, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+TypeError: get_doc() takes exactly 1 argument (0 given)
+Exception on / [GET]
+Traceback (most recent call last):
+  File "/root/Desktop/techstitution/venv/local/lib/python2.7/site-packages/flask/app.py", line 1817, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/root/Desktop/techstitution/venv/local/lib/python2.7/site-packages/flask/app.py", line 1477, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/root/Desktop/techstitution/venv/local/lib/python2.7/site-packages/flask/app.py", line 1381, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/root/Desktop/techstitution/venv/local/lib/python2.7/site-packages/flask/app.py", line 1475, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/root/Desktop/techstitution/venv/local/lib/python2.7/site-packages/flask/app.py", line 1461, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+TypeError: get_doc() takes exactly 1 argument (0 given)
+Exception on / [GET]
+Traceback (most recent call last):
+  File "/root/Desktop/techstitution/venv/local/lib/python2.7/site-packages/flask/app.py", line 1817, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/root/Desktop/techstitution/venv/local/lib/python2.7/site-packages/flask/app.py", line 1477, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/root/Desktop/techstitution/venv/local/lib/python2.7/site-packages/flask/app.py", line 1381, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/root/Desktop/techstitution/venv/local/lib/python2.7/site-packages/flask/app.py", line 1475, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/root/Desktop/techstitution/venv/local/lib/python2.7/site-packages/flask/app.py", line 1461, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+TypeError: get_doc() takes exactly 1 argument (0 given)
+Exception on / [GET]
+Traceback (most recent call last):
+  File "/root/Desktop/techstitution/venv/local/lib/python2.7/site-packages/flask/app.py", line 1817, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/root/Desktop/techstitution/venv/local/lib/python2.7/site-packages/flask/app.py", line 1477, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/root/Desktop/techstitution/venv/local/lib/python2.7/site-packages/flask/app.py", line 1381, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/root/Desktop/techstitution/venv/local/lib/python2.7/site-packages/flask/app.py", line 1475, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/root/Desktop/techstitution/venv/local/lib/python2.7/site-packages/flask/app.py", line 1461, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+TypeError: get_doc() takes exactly 1 argument (0 given)
+Exception on / [GET]
+Traceback (most recent call last):
+  File "/root/Desktop/techstitution/venv/local/lib/python2.7/site-packages/flask/app.py", line 1817, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/root/Desktop/techstitution/venv/local/lib/python2.7/site-packages/flask/app.py", line 1477, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/root/Desktop/techstitution/venv/local/lib/python2.7/site-packages/flask/app.py", line 1381, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/root/Desktop/techstitution/venv/local/lib/python2.7/site-packages/flask/app.py", line 1475, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/root/Desktop/techstitution/venv/local/lib/python2.7/site-packages/flask/app.py", line 1461, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+TypeError: get_doc() takes exactly 1 argument (0 given)
+Exception on / [GET]
+Traceback (most recent call last):
+  File "/root/Desktop/techstitution/venv/local/lib/python2.7/site-packages/flask/app.py", line 1817, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/root/Desktop/techstitution/venv/local/lib/python2.7/site-packages/flask/app.py", line 1477, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/root/Desktop/techstitution/venv/local/lib/python2.7/site-packages/flask/app.py", line 1381, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/root/Desktop/techstitution/venv/local/lib/python2.7/site-packages/flask/app.py", line 1475, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/root/Desktop/techstitution/venv/local/lib/python2.7/site-packages/flask/app.py", line 1461, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+TypeError: get_doc() takes exactly 1 argument (0 given)
+Exception on / [GET]
+Traceback (most recent call last):
+  File "/root/Desktop/techstitution/venv/local/lib/python2.7/site-packages/flask/app.py", line 1817, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/root/Desktop/techstitution/venv/local/lib/python2.7/site-packages/flask/app.py", line 1477, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/root/Desktop/techstitution/venv/local/lib/python2.7/site-packages/flask/app.py", line 1381, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/root/Desktop/techstitution/venv/local/lib/python2.7/site-packages/flask/app.py", line 1475, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/root/Desktop/techstitution/venv/local/lib/python2.7/site-packages/flask/app.py", line 1461, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+TypeError: get_doc() takes exactly 1 argument (0 given)
+Exception on / [GET]
+Traceback (most recent call last):
+  File "/root/Desktop/techstitution/venv/local/lib/python2.7/site-packages/flask/app.py", line 1817, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/root/Desktop/techstitution/venv/local/lib/python2.7/site-packages/flask/app.py", line 1477, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/root/Desktop/techstitution/venv/local/lib/python2.7/site-packages/flask/app.py", line 1381, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/root/Desktop/techstitution/venv/local/lib/python2.7/site-packages/flask/app.py", line 1475, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/root/Desktop/techstitution/venv/local/lib/python2.7/site-packages/flask/app.py", line 1461, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+TypeError: get_doc() takes exactly 1 argument (0 given)
+Exception on / [GET]
+Traceback (most recent call last):
+  File "/root/Desktop/techstitution/venv/local/lib/python2.7/site-packages/flask/app.py", line 1817, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/root/Desktop/techstitution/venv/local/lib/python2.7/site-packages/flask/app.py", line 1477, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/root/Desktop/techstitution/venv/local/lib/python2.7/site-packages/flask/app.py", line 1381, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/root/Desktop/techstitution/venv/local/lib/python2.7/site-packages/flask/app.py", line 1475, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/root/Desktop/techstitution/venv/local/lib/python2.7/site-packages/flask/app.py", line 1461, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+TypeError: get_doc() takes exactly 1 argument (0 given)
+Exception on / [GET]
+Traceback (most recent call last):
+  File "/root/Desktop/techstitution/venv/local/lib/python2.7/site-packages/flask/app.py", line 1817, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/root/Desktop/techstitution/venv/local/lib/python2.7/site-packages/flask/app.py", line 1477, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/root/Desktop/techstitution/venv/local/lib/python2.7/site-packages/flask/app.py", line 1381, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/root/Desktop/techstitution/venv/local/lib/python2.7/site-packages/flask/app.py", line 1475, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/root/Desktop/techstitution/venv/local/lib/python2.7/site-packages/flask/app.py", line 1461, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+TypeError: get_doc() takes exactly 1 argument (0 given)
+Exception on / [GET]
+Traceback (most recent call last):
+  File "/root/Desktop/techstitution/venv/local/lib/python2.7/site-packages/flask/app.py", line 1817, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/root/Desktop/techstitution/venv/local/lib/python2.7/site-packages/flask/app.py", line 1477, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/root/Desktop/techstitution/venv/local/lib/python2.7/site-packages/flask/app.py", line 1381, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/root/Desktop/techstitution/venv/local/lib/python2.7/site-packages/flask/app.py", line 1475, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/root/Desktop/techstitution/venv/local/lib/python2.7/site-packages/flask/app.py", line 1461, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+TypeError: get_doc() takes exactly 1 argument (0 given)
+Exception on / [GET]
+Traceback (most recent call last):
+  File "/root/Desktop/techstitution/venv/local/lib/python2.7/site-packages/flask/app.py", line 1817, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/root/Desktop/techstitution/venv/local/lib/python2.7/site-packages/flask/app.py", line 1477, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/root/Desktop/techstitution/venv/local/lib/python2.7/site-packages/flask/app.py", line 1381, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/root/Desktop/techstitution/venv/local/lib/python2.7/site-packages/flask/app.py", line 1475, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/root/Desktop/techstitution/venv/local/lib/python2.7/site-packages/flask/app.py", line 1461, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+TypeError: get_doc() takes exactly 1 argument (0 given)
+Exception on /favicon.ico [GET]
+Traceback (most recent call last):
+  File "/root/Desktop/techstitution/venv/local/lib/python2.7/site-packages/flask/app.py", line 1817, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/root/Desktop/techstitution/venv/local/lib/python2.7/site-packages/flask/app.py", line 1477, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/root/Desktop/techstitution/venv/local/lib/python2.7/site-packages/flask/app.py", line 1381, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/root/Desktop/techstitution/venv/local/lib/python2.7/site-packages/flask/app.py", line 1475, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/root/Desktop/techstitution/venv/local/lib/python2.7/site-packages/flask/app.py", line 1461, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/root/Desktop/techstitution/app/mod_main/views.py", line 31, in get_doc
+    doc = db.find({"_id":ObjectId(id)})
+  File "/root/Desktop/techstitution/venv/local/lib/python2.7/site-packages/bson/objectid.py", line 121, in __init__
+    self.__validate(oid)
+  File "/root/Desktop/techstitution/venv/local/lib/python2.7/site-packages/bson/objectid.py", line 228, in __validate
+    _raise_invalid_id(oid)
+  File "/root/Desktop/techstitution/venv/local/lib/python2.7/site-packages/bson/objectid.py", line 61, in _raise_invalid_id
+    oid, binary_type.__name__))
+InvalidId: u'favicon.ico' is not a valid ObjectId, it must be a 12-byte input of type 'str' or a 24-character hex string
+Exception on /favicon.ico [GET]
+Traceback (most recent call last):
+  File "/root/Desktop/techstitution/venv/local/lib/python2.7/site-packages/flask/app.py", line 1817, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/root/Desktop/techstitution/venv/local/lib/python2.7/site-packages/flask/app.py", line 1477, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/root/Desktop/techstitution/venv/local/lib/python2.7/site-packages/flask/app.py", line 1381, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/root/Desktop/techstitution/venv/local/lib/python2.7/site-packages/flask/app.py", line 1475, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/root/Desktop/techstitution/venv/local/lib/python2.7/site-packages/flask/app.py", line 1461, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/root/Desktop/techstitution/app/mod_main/views.py", line 31, in get_doc
+    doc = db.find({"_id":ObjectId(id)})
+  File "/root/Desktop/techstitution/venv/local/lib/python2.7/site-packages/bson/objectid.py", line 121, in __init__
+    self.__validate(oid)
+  File "/root/Desktop/techstitution/venv/local/lib/python2.7/site-packages/bson/objectid.py", line 228, in __validate
+    _raise_invalid_id(oid)
+  File "/root/Desktop/techstitution/venv/local/lib/python2.7/site-packages/bson/objectid.py", line 61, in _raise_invalid_id
+    oid, binary_type.__name__))
+InvalidId: u'favicon.ico' is not a valid ObjectId, it must be a 12-byte input of type 'str' or a 24-character hex string
+Exception on /favicon.ico [GET]
+Traceback (most recent call last):
+  File "/root/Desktop/techstitution/venv/local/lib/python2.7/site-packages/flask/app.py", line 1817, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/root/Desktop/techstitution/venv/local/lib/python2.7/site-packages/flask/app.py", line 1477, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/root/Desktop/techstitution/venv/local/lib/python2.7/site-packages/flask/app.py", line 1381, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/root/Desktop/techstitution/venv/local/lib/python2.7/site-packages/flask/app.py", line 1475, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/root/Desktop/techstitution/venv/local/lib/python2.7/site-packages/flask/app.py", line 1461, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/root/Desktop/techstitution/app/mod_main/views.py", line 31, in get_doc
+    doc = db.find({"_id":ObjectId(id)})
+  File "/root/Desktop/techstitution/venv/local/lib/python2.7/site-packages/bson/objectid.py", line 121, in __init__
+    self.__validate(oid)
+  File "/root/Desktop/techstitution/venv/local/lib/python2.7/site-packages/bson/objectid.py", line 228, in __validate
+    _raise_invalid_id(oid)
+  File "/root/Desktop/techstitution/venv/local/lib/python2.7/site-packages/bson/objectid.py", line 61, in _raise_invalid_id
+    oid, binary_type.__name__))
+InvalidId: u'favicon.ico' is not a valid ObjectId, it must be a 12-byte input of type 'str' or a 24-character hex string
+Exception on /favicon.ico [GET]
+Traceback (most recent call last):
+  File "/root/Desktop/techstitution/venv/local/lib/python2.7/site-packages/flask/app.py", line 1817, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/root/Desktop/techstitution/venv/local/lib/python2.7/site-packages/flask/app.py", line 1477, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/root/Desktop/techstitution/venv/local/lib/python2.7/site-packages/flask/app.py", line 1381, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/root/Desktop/techstitution/venv/local/lib/python2.7/site-packages/flask/app.py", line 1475, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/root/Desktop/techstitution/venv/local/lib/python2.7/site-packages/flask/app.py", line 1461, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/root/Desktop/techstitution/app/mod_main/views.py", line 31, in get_doc
+    doc = db.find({"_id":ObjectId(id)})
+  File "/root/Desktop/techstitution/venv/local/lib/python2.7/site-packages/bson/objectid.py", line 121, in __init__
+    self.__validate(oid)
+  File "/root/Desktop/techstitution/venv/local/lib/python2.7/site-packages/bson/objectid.py", line 228, in __validate
+    _raise_invalid_id(oid)
+  File "/root/Desktop/techstitution/venv/local/lib/python2.7/site-packages/bson/objectid.py", line 61, in _raise_invalid_id
+    oid, binary_type.__name__))
+InvalidId: u'favicon.ico' is not a valid ObjectId, it must be a 12-byte input of type 'str' or a 24-character hex string
+Exception on /favicon.ico [GET]
+Traceback (most recent call last):
+  File "/root/Desktop/techstitution/venv/local/lib/python2.7/site-packages/flask/app.py", line 1817, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/root/Desktop/techstitution/venv/local/lib/python2.7/site-packages/flask/app.py", line 1477, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/root/Desktop/techstitution/venv/local/lib/python2.7/site-packages/flask/app.py", line 1381, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/root/Desktop/techstitution/venv/local/lib/python2.7/site-packages/flask/app.py", line 1475, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/root/Desktop/techstitution/venv/local/lib/python2.7/site-packages/flask/app.py", line 1461, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/root/Desktop/techstitution/app/mod_main/views.py", line 31, in get_doc
+    doc = db.find({"_id":ObjectId(id)})
+  File "/root/Desktop/techstitution/venv/local/lib/python2.7/site-packages/bson/objectid.py", line 121, in __init__
+    self.__validate(oid)
+  File "/root/Desktop/techstitution/venv/local/lib/python2.7/site-packages/bson/objectid.py", line 228, in __validate
+    _raise_invalid_id(oid)
+  File "/root/Desktop/techstitution/venv/local/lib/python2.7/site-packages/bson/objectid.py", line 61, in _raise_invalid_id
+    oid, binary_type.__name__))
+InvalidId: u'favicon.ico' is not a valid ObjectId, it must be a 12-byte input of type 'str' or a 24-character hex string
+Exception on /favicon.ico [GET]
+Traceback (most recent call last):
+  File "/root/Desktop/techstitution/venv/local/lib/python2.7/site-packages/flask/app.py", line 1817, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/root/Desktop/techstitution/venv/local/lib/python2.7/site-packages/flask/app.py", line 1477, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/root/Desktop/techstitution/venv/local/lib/python2.7/site-packages/flask/app.py", line 1381, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/root/Desktop/techstitution/venv/local/lib/python2.7/site-packages/flask/app.py", line 1475, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/root/Desktop/techstitution/venv/local/lib/python2.7/site-packages/flask/app.py", line 1461, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/root/Desktop/techstitution/app/mod_main/views.py", line 31, in get_doc
+    doc = db.find({"_id":ObjectId(id)})
+  File "/root/Desktop/techstitution/venv/local/lib/python2.7/site-packages/bson/objectid.py", line 121, in __init__
+    self.__validate(oid)
+  File "/root/Desktop/techstitution/venv/local/lib/python2.7/site-packages/bson/objectid.py", line 228, in __validate
+    _raise_invalid_id(oid)
+  File "/root/Desktop/techstitution/venv/local/lib/python2.7/site-packages/bson/objectid.py", line 61, in _raise_invalid_id
+    oid, binary_type.__name__))
+InvalidId: u'favicon.ico' is not a valid ObjectId, it must be a 12-byte input of type 'str' or a 24-character hex string
+Exception on /favicon.ico [GET]
+Traceback (most recent call last):
+  File "/root/Desktop/techstitution/venv/local/lib/python2.7/site-packages/flask/app.py", line 1817, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/root/Desktop/techstitution/venv/local/lib/python2.7/site-packages/flask/app.py", line 1477, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/root/Desktop/techstitution/venv/local/lib/python2.7/site-packages/flask/app.py", line 1381, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/root/Desktop/techstitution/venv/local/lib/python2.7/site-packages/flask/app.py", line 1475, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/root/Desktop/techstitution/venv/local/lib/python2.7/site-packages/flask/app.py", line 1461, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/root/Desktop/techstitution/app/mod_main/views.py", line 31, in get_doc
+    doc = db.find({"_id":ObjectId(id)})
+  File "/root/Desktop/techstitution/venv/local/lib/python2.7/site-packages/bson/objectid.py", line 121, in __init__
+    self.__validate(oid)
+  File "/root/Desktop/techstitution/venv/local/lib/python2.7/site-packages/bson/objectid.py", line 228, in __validate
+    _raise_invalid_id(oid)
+  File "/root/Desktop/techstitution/venv/local/lib/python2.7/site-packages/bson/objectid.py", line 61, in _raise_invalid_id
+    oid, binary_type.__name__))
+InvalidId: u'favicon.ico' is not a valid ObjectId, it must be a 12-byte input of type 'str' or a 24-character hex string
+Exception on /favicon.ico [GET]
+Traceback (most recent call last):
+  File "/root/Desktop/techstitution/venv/local/lib/python2.7/site-packages/flask/app.py", line 1817, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/root/Desktop/techstitution/venv/local/lib/python2.7/site-packages/flask/app.py", line 1477, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/root/Desktop/techstitution/venv/local/lib/python2.7/site-packages/flask/app.py", line 1381, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/root/Desktop/techstitution/venv/local/lib/python2.7/site-packages/flask/app.py", line 1475, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/root/Desktop/techstitution/venv/local/lib/python2.7/site-packages/flask/app.py", line 1461, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/root/Desktop/techstitution/app/mod_main/views.py", line 31, in get_doc
+    doc = db.find({"_id":ObjectId(id)})
+  File "/root/Desktop/techstitution/venv/local/lib/python2.7/site-packages/bson/objectid.py", line 121, in __init__
+    self.__validate(oid)
+  File "/root/Desktop/techstitution/venv/local/lib/python2.7/site-packages/bson/objectid.py", line 228, in __validate
+    _raise_invalid_id(oid)
+  File "/root/Desktop/techstitution/venv/local/lib/python2.7/site-packages/bson/objectid.py", line 61, in _raise_invalid_id
+    oid, binary_type.__name__))
+InvalidId: u'favicon.ico' is not a valid ObjectId, it must be a 12-byte input of type 'str' or a 24-character hex string
+Exception on /favicon.ico [GET]
+Traceback (most recent call last):
+  File "/root/Desktop/techstitution/venv/local/lib/python2.7/site-packages/flask/app.py", line 1817, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/root/Desktop/techstitution/venv/local/lib/python2.7/site-packages/flask/app.py", line 1477, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/root/Desktop/techstitution/venv/local/lib/python2.7/site-packages/flask/app.py", line 1381, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/root/Desktop/techstitution/venv/local/lib/python2.7/site-packages/flask/app.py", line 1475, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/root/Desktop/techstitution/venv/local/lib/python2.7/site-packages/flask/app.py", line 1461, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/root/Desktop/techstitution/app/mod_main/views.py", line 31, in get_doc
+    doc = db.find({"_id":ObjectId(id)})
+  File "/root/Desktop/techstitution/venv/local/lib/python2.7/site-packages/bson/objectid.py", line 121, in __init__
+    self.__validate(oid)
+  File "/root/Desktop/techstitution/venv/local/lib/python2.7/site-packages/bson/objectid.py", line 228, in __validate
+    _raise_invalid_id(oid)
+  File "/root/Desktop/techstitution/venv/local/lib/python2.7/site-packages/bson/objectid.py", line 61, in _raise_invalid_id
+    oid, binary_type.__name__))
+InvalidId: u'favicon.ico' is not a valid ObjectId, it must be a 12-byte input of type 'str' or a 24-character hex string
+Exception on /favicon.ico [GET]
+Traceback (most recent call last):
+  File "/root/Desktop/techstitution/venv/local/lib/python2.7/site-packages/flask/app.py", line 1817, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/root/Desktop/techstitution/venv/local/lib/python2.7/site-packages/flask/app.py", line 1477, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/root/Desktop/techstitution/venv/local/lib/python2.7/site-packages/flask/app.py", line 1381, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/root/Desktop/techstitution/venv/local/lib/python2.7/site-packages/flask/app.py", line 1475, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/root/Desktop/techstitution/venv/local/lib/python2.7/site-packages/flask/app.py", line 1461, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/root/Desktop/techstitution/app/mod_main/views.py", line 31, in get_doc
+    doc = db.find({"_id":ObjectId(id)})
+  File "/root/Desktop/techstitution/venv/local/lib/python2.7/site-packages/bson/objectid.py", line 121, in __init__
+    self.__validate(oid)
+  File "/root/Desktop/techstitution/venv/local/lib/python2.7/site-packages/bson/objectid.py", line 228, in __validate
+    _raise_invalid_id(oid)
+  File "/root/Desktop/techstitution/venv/local/lib/python2.7/site-packages/bson/objectid.py", line 61, in _raise_invalid_id
+    oid, binary_type.__name__))
+InvalidId: u'favicon.ico' is not a valid ObjectId, it must be a 12-byte input of type 'str' or a 24-character hex string
+Exception on /favicon.ico [GET]
+Traceback (most recent call last):
+  File "/root/Desktop/techstitution/venv/local/lib/python2.7/site-packages/flask/app.py", line 1817, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/root/Desktop/techstitution/venv/local/lib/python2.7/site-packages/flask/app.py", line 1477, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/root/Desktop/techstitution/venv/local/lib/python2.7/site-packages/flask/app.py", line 1381, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/root/Desktop/techstitution/venv/local/lib/python2.7/site-packages/flask/app.py", line 1475, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/root/Desktop/techstitution/venv/local/lib/python2.7/site-packages/flask/app.py", line 1461, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/root/Desktop/techstitution/app/mod_main/views.py", line 29, in get_doc
+    doc = db.find({"_id":ObjectId(id)})
+  File "/root/Desktop/techstitution/venv/local/lib/python2.7/site-packages/bson/objectid.py", line 121, in __init__
+    self.__validate(oid)
+  File "/root/Desktop/techstitution/venv/local/lib/python2.7/site-packages/bson/objectid.py", line 228, in __validate
+    _raise_invalid_id(oid)
+  File "/root/Desktop/techstitution/venv/local/lib/python2.7/site-packages/bson/objectid.py", line 61, in _raise_invalid_id
+    oid, binary_type.__name__))
+InvalidId: u'favicon.ico' is not a valid ObjectId, it must be a 12-byte input of type 'str' or a 24-character hex string
+Exception on /favicon.ico [GET]
+Traceback (most recent call last):
+  File "/root/Desktop/techstitution/venv/local/lib/python2.7/site-packages/flask/app.py", line 1817, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/root/Desktop/techstitution/venv/local/lib/python2.7/site-packages/flask/app.py", line 1477, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/root/Desktop/techstitution/venv/local/lib/python2.7/site-packages/flask/app.py", line 1381, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/root/Desktop/techstitution/venv/local/lib/python2.7/site-packages/flask/app.py", line 1475, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/root/Desktop/techstitution/venv/local/lib/python2.7/site-packages/flask/app.py", line 1461, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/root/Desktop/techstitution/app/mod_main/views.py", line 29, in get_doc
+    doc = db.find({"_id":ObjectId(id)})
+  File "/root/Desktop/techstitution/venv/local/lib/python2.7/site-packages/bson/objectid.py", line 121, in __init__
+    self.__validate(oid)
+  File "/root/Desktop/techstitution/venv/local/lib/python2.7/site-packages/bson/objectid.py", line 228, in __validate
+    _raise_invalid_id(oid)
+  File "/root/Desktop/techstitution/venv/local/lib/python2.7/site-packages/bson/objectid.py", line 61, in _raise_invalid_id
+    oid, binary_type.__name__))
+InvalidId: u'favicon.ico' is not a valid ObjectId, it must be a 12-byte input of type 'str' or a 24-character hex string

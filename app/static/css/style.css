@@ -1,0 +1,72 @@
+
+body{
+  font-family: GillSans, Calibri, Trebuchet, sans-serif
+}
+#wrapper{
+  width:80%;
+  margin:auto;
+  box-shadow: 3px 3px 3px solid black;
+}
+#logo{
+margin-left:32%;
+}
+.checkbox-orange[type="checkbox"].filled-in:checked + label:after{
+     border: 2px solid #ff9800;
+     background-color: #ff9800;
+}
+#pershkrimi {
+  margin-left:20%;
+  text-align: center;
+  color:black;
+letter-spacing: 1px;
+}
+#pershkrimi2{
+  margin-left:10%;
+}
+#nentitulli{
+  font-size:16px;
+  letter-spacing: 1.5px;
+  text-align: center;
+  margin:5px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  border-radius: 2px;
+  background-color: #0f1d2e;
+  text-shadow: 0 2px 0 black;
+}
+input[type="text"]{
+  letter-spacing: 1.5px;
+}
+#collectt{
+width:800px;
+padding: 10px;
+}
+.language-markup{
+     text-shadow: 0 1px 0 lightgray;
+     font-family: cursive;
+}
+#form1 ,#form2 , #form3 , #form4 , #form5 ,#form6{
+  display:none;
+}
+#majtas{
+  float:left;
+  width:350px;
+}
+#djathtas{
+  float:right;
+}
+#txta1{
+margin-right:70px;
+padding-right: 20px;
+padding-left: 10px;
+height: 200px;
+margin-left:-10px;
+box-shadow: 1px 1px 1px black;
+}
+.cakto {
+  text-align: center;
+}
+#submit{
+  margin-left:30%;
+  width:300px;
+}
