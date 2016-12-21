@@ -2,19 +2,20 @@
 <head>
 
 	<head>
-		<titulli>Formulari</titulli>
+		<title>Formulari</title>
 		 <!--Import Google Icon Font-->
 		 <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 		 <!--Import materialize.css-->
 
-		 <link rel=stylesheet type=text/css href="{{ url_for('static', filename='materialize.min.css') }}"" media="screen,projection>
-		 <link rel=stylesheet type=text/css href="{{ url_for('static', filename='css/style.css') }}">
+		 <link rel=stylesheet type=text/css href="{{ url_for('static', filename='materialize.min.css') }}">
+		 <link rel=stylesheet type=text/css href="{{ url_for('static', filename='style.css') }}">
 		 <!--Let browser know website is optimized for mobile-->
 		 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-	 </head>
+		 <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+ 		<script type="text/javascript" src="{{url_for('static' , filename='materialize.min.js')}}"></script>
+ 		<script type="text/javascript" src="{{ url_for('static', filename='jquery.css') }}"></script>
 </head>
 <body class="container">
-
 		<img id="logo" src="{{ url_for('static', filename='images/logo.png')}}"><br><br>
 	<div id="wrapper">
 		<font color="#ffffff"><p id="nentitulli">Formular i Njoftimit per Hyrje ne aktivitetin e Komunikimeve Elektronike</p></font>
@@ -22,17 +23,20 @@
 	    <div class="collection waves-color-demo">
 				<div class="collection-item">
 		    <code  class=" language-markup">TE DHENAT PER NDERMARRESIN: </code>
-            <a href="#!" id="ploteso1" class="waves-effect waves-light grey darken-3 btn secondary-content" style="text-shadow: 0 2px 0 black;">&nbsp;&nbsp;&nbsp;<b>I </b> Ploteso Te dhenat </a>
-         </div>
+            <a href="#!" id="ploteso1" class="waves-effect waves-light grey darken-3 btn secondary-content" style="text-shadow: 0 2px 0 black;">
+							&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Hapi i Pare 1	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a>
+
+
+				 </div>
 				 <br>
 				 <div id="form1">
-				 <div class="input-field col s6">
-				 <input id="first_name" type="text" class="validate" >
-				 <label for="emri_ndermarresit">Emri i Ndermarresit</label>
-			 </div>
+					 <div class="input-field col s6">
+						 <input id="last_name" type="text" class="validate">
+						 <label for="numri_biznesit"id="emri_ndermarresit">Emri i Ndermarresit</label>
+					 </div>
 			 <div class="input-field col s6">
 				 <input id="last_name" type="text" class="validate">
-				 <label for="numri_biznesit">Numri i Regjistrimit te Biznesit</label>
+				 <label for="numri_biznesit"id="nr_reg1">Numri i Regjistrimit te Biznesit</label>
 			 </div>
 			 <div class="input-field col s6">
 				 <input id="last_name" type="text" class="validate">
@@ -58,7 +62,7 @@
 
 				 			<div class="collection-item">
 				 			<code  class=" language-markup">TE DHENAT PER ZYRTARIN LIGJERISHT TE PERGJEGJESHEM: </code>
-							<a href="#!" id="ploteso2" class="waves-effect waves-light grey darken-3 btn secondary-content" style="text-shadow: 0 2px 0 black;">&nbsp;&nbsp;<b>II </b> Ploteso Te dhenat </a>
+							<a href="#!" id="ploteso2" class="waves-effect waves-light grey darken-3 btn secondary-content" style="text-shadow: 0 2px 0 black;">&nbsp;&nbsp;Vazhdo ne Hapin 2 </a>
 							</div>
 				 <br>
 							<div id="form2">
@@ -90,7 +94,7 @@
 
 					 <div class="collection-item">
 					<code  class=" language-markup" >AKTIVITETET TE CILAT NJOFTOHEN/CREGJISTROHEN: </code>
-							 <a href="#!" id="ploteso3" class="waves-effect waves-light grey darken-3 btn secondary-content" style="text-shadow: 0 2px 0 black;"><b>III </b> Ploteso Te dhenat </a>
+							 <a href="#!" id="ploteso3" class="waves-effect waves-light grey darken-3 btn secondary-content" style="text-shadow: 0 2px 0 black;">Vazhdo ne hapin e 3 </a>
 						</div>
 						<br>
 						<div id="form3" action="#">
@@ -235,7 +239,7 @@
 
 				<div class="collection-item">
 			 <code  class=" language-markup" >PERSHKRIMI I AKTIVITETIT DHE FAZA E OFRIMIT </code>
-						<a href="#!" id="ploteso4" class="waves-effect waves-light grey darken-3 btn secondary-content" style="text-shadow: 0 2px 0 black;"><b>III </b> Ploteso Te dhenat </a>
+						<a href="#!" id="ploteso4" class="waves-effect waves-light grey darken-3 btn secondary-content" style="text-shadow: 0 2px 0 black;">Vazhdo ne hapin e 4</a>
 				 </div>
 				 <br>
 				 <div id="form4" action="#">
@@ -258,7 +262,7 @@
 
 			 <div class="collection-item">
 	 <code  class=" language-markup">DOKUMENTAT E BASHKANGJITURA: </code>
-					 <a href="#!" id="ploteso5" class="waves-effect waves-light grey darken-3 btn secondary-content" style="text-shadow: 0 2px 0 black;">&nbsp;&nbsp;&nbsp;<b>I </b> Ploteso Te dhenat </a>
+					 <a href="#!" id="ploteso5" class="waves-effect waves-light grey darken-3 btn secondary-content" style="text-shadow: 0 2px 0 black;">Vazhdo ne hapin e 5 </a>
 				</div>
 				<br>
 				<div id="form5">
@@ -307,7 +311,7 @@
 		<div class="collection waves-color-demo">
 			<div class="collection-item">
 			<code  class=" language-markup">KONFIRMIMI I NJOFTIMIT: </code>
-					<a href="#!" id="ploteso6" class="waves-effect waves-light grey darken-3 btn secondary-content" style="text-shadow: 0 2px 0 black;">&nbsp;&nbsp;&nbsp;<b>I </b> Ploteso Te dhenat </a>
+					<a href="#!" id="ploteso6" class="waves-effect waves-light grey darken-3 btn secondary-content" style="text-shadow: 0 2px 0 black;">Vazhdo ne hapin e 6  </a>
 			 </div>
 			 <br>
 			 <div id="form6">
@@ -321,15 +325,17 @@
 						 <input type="checkbox" id="JO" />
 					 <label for="JO" id="JO-label">JO</label>
 	 							 </div>
-							 </div>
+							 </div><br>
+
+  <p><input class="with-gap" name="group1" type="radio" id="test5"/>
+    <label  id="pranoj" for="test5">&nbsp;&nbsp;&nbsp;&nbsp;Pranoj Kushtet duke klikuar <a id="ketu" href="#">ketu</a></label>
+  </p>
+
 <br>
-    <button class="btn btn-primary btn-lg waves-effect waves-light" id="submit" type="submit">Submit</button>
+<button class="grey darken-3 btn first-content" style="text-shadow: 0 2px 0 black;"  id="submit" type="submit">Dergo</button>
 	</form>
 		</div>
       </div>
-			<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-			<script type="text/javascript" src="{{url_for('static' , filename=' materialize.min.js ')}}"></script>
-
 			<script>
 $(document).ready(function(){
     $("#ploteso1").click(function(){
@@ -349,6 +355,9 @@ $(document).ready(function(){
 		});
 		$("#ploteso6").click(function(){
 			$("#form6").slideToggle("slow");
+		});
+		$("#ketu").click(function(){
+			alert("une nepermjet ketij dokumenti deklaroj se do te ushtroj aktivitet ne fushen e komunikimeve elektronike te shenuara me siper dhe aplikoj per regjistrim ne regjistrin e ofruesve te rrjeteve dhe sherbimeve te  komunikimeve elektronike te Autoritetit (ARKEP). une permes ketij dokumenti deklaroj se kam mbyllur aktivitetet e komunikimeve elektronike te shenuara me siper une nepermjet ketij dokumenti deklaroj se kam mbyllur qdo aktivitet te komunikimeve elektronike nen regjimin e Autorizimit te pergjithshem. une nepermjet ketij dokumenti deklaroj se te dhenat e mia kane pesuar ndryshime , sikurse pershkruhen ne formular. une nepermjet ketij dokumenti deklaroj se kam ndryshuar formen ligjore te ndermarrjes sime siq pershkruhet ne formular. Emri i vjeter eshte si me poshte. ");
 		});
 });
 </script>
