@@ -6,95 +6,79 @@
 		 <!--Import Google Icon Font-->
 		 <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 		 <!--Import materialize.css-->
-
 		 <link rel=stylesheet type=text/css href="{{ url_for('static', filename='materialize.min.css') }}">
 		 <link rel=stylesheet type=text/css href="{{ url_for('static', filename='style.css') }}">
 		 <!--Let browser know website is optimized for mobile-->
 		 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-		 <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
- 		<script type="text/javascript" src="{{url_for('static' , filename='materialize.min.js')}}"></script>
- 		<script type="text/javascript" src="{{ url_for('static', filename='jquery.css') }}"></script>
+
 </head>
 <body class="container">
+
 		<img id="logo" src="{{ url_for('static', filename='images/logo.png')}}"><br><br>
 	<div id="wrapper">
 		<font color="#ffffff"><p id="nentitulli">Formular i Njoftimit per Hyrje ne aktivitetin e Komunikimeve Elektronike</p></font>
-		<form method="POST">
+		<form id="formaRegjistrimit" method="POST">
 	    <div class="collection waves-color-demo">
 				<div class="collection-item">
 		    <code  class=" language-markup">TE DHENAT PER NDERMARRESIN: </code>
             <a href="#!" id="ploteso1" class="waves-effect waves-light grey darken-3 btn secondary-content" style="text-shadow: 0 2px 0 black;">
-							&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Hapi i Pare 1	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a>
-
-
+						&nbsp;&nbsp;&nbsp;&nbsp;Hapi i Pare 1	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a>
 				 </div>
 				 <br>
 				 <div id="form1">
 					 <div class="input-field col s6">
-						 <input id="last_name" type="text" class="validate">
-						 <label for="numri_biznesit"id="emri_ndermarresit">Emri i Ndermarresit</label>
-					 </div>
+						 <input placeholder="Emri i Ndermarresit" name="emri_ndermarresit" type="text" class="validate">
+			 		</div>
+					<div class="input-field col s6">
+			 		 <input placeholder="Numri i Regjistrimit te Biznesit" name="nr_biznesit" type="text" class="validate">
+			 	 </div>
 			 <div class="input-field col s6">
-				 <input id="last_name" type="text" class="validate">
-				 <label for="numri_biznesit"id="nr_reg1">Numri i Regjistrimit te Biznesit</label>
+				 <input placeholder="Numri Fiskal" name="nr_fiskal" type="text" class="validate">
 			 </div>
 			 <div class="input-field col s6">
-				 <input id="last_name" type="text" class="validate">
-				 <label for="numri_biznesit">Numri Fiskal</label>
+				 <input placeholder="adresa " name="adresa" type="text" class="validate">
 			 </div>
 			 <div class="input-field col s6">
-				 <input id="last_name" type="text" class="validate">
-				 <label for="adresa">Adresa</label>
+				 <input placeholder="Numri i Telefonit " name="nr_tel" type="text" class="validate">
 			 </div>
 			 <div class="input-field col s6">
-				 <input id="last_name" type="text" class="validate">
-				 <label for="numritelefonit">Numri i Telefonit</label>
+				 <input placeholder="Numri i Faksit " name="nr_faks" type="text" class="validate">
 			 </div>
 			 <div class="input-field col s6">
-				 <input id="last_name" type="text" class="validate">
-				 <label for="numri_faksit">Numri i Faksit</label>
-			 </div>
-			 <div class="input-field col s6">
-				 <input id="last_name" type="text" class="validate">
-				 <label for="email">Email adresa</label><br><br><br>
+				 <input placeholder="Email Adresat " name="email" type="text" class="validate">
+				 <br><br><br>
 			 </div>
 		 </div>
 
 				 			<div class="collection-item">
 				 			<code  class=" language-markup">TE DHENAT PER ZYRTARIN LIGJERISHT TE PERGJEGJESHEM: </code>
-							<a href="#!" id="ploteso2" class="waves-effect waves-light grey darken-3 btn secondary-content" style="text-shadow: 0 2px 0 black;">&nbsp;&nbsp;Vazhdo ne Hapin 2 </a>
+							<a href="#!" id="ploteso2" class="waves-effect waves-light grey darken-3 btn secondary-content" style="text-shadow: 0 2px 0 black;">Vazhdo ne Hapin 2 </a>
 							</div>
 				 <br>
 							<div id="form2">
 							<div class="input-field col s6">
-							<input id="first_name" type="text" class="validate">
-							<label for="emri_zyrtarit">Emri i zyrtarit</label>
+								<input placeholder="Email i zyrtarit " name="emri_zyrtarit" type="text" class="validate">
 						</div>
 						<div class="input-field col s6">
-							<input id="last_name" type="text" class="validate">
-							<label for="Adresa2">Adresa</label>
+							<input placeholder="Adresa " name="adresa_2" type="text" class="validate">
 						</div>
 						<div class="input-field col s6">
-							<input id="last_name" type="text" class="validate">
-							<label for="nr_tel2">Numri i Telefonit</label>
+							<input placeholder="Numri i Telefonit " name="nr_tel2" type="text" class="validate">
 						</div>
 						<div class="input-field col s6">
-							<input id="last_name" type="text" class="validate">
-							<label for="nr_faks2">Numri i Faksit</label>
+							<input placeholder="Numri i Faksit " name="nr_faks2" type="text" class="validate">
 						</div>
 						<div class="input-field col s6">
-							<input id="last_name" type="text" class="validate">
-							<label for="email2">Email adresa</label>
+							<input placeholder="Email adresa  " name="email2" type="text" class="validate">
 						</div>
 						<div class="input-field col s6">
-							<input id="last_name" type="text" class="validate">
-							<label for="nr_ID2">Numri i ID</label><br><br><br>
+							<input placeholder="NUmri i ID " name="nr_ID" type="text" class="validate"><br><br><br>
 						</div>
 					</div>
 
 					 <div class="collection-item">
 					<code  class=" language-markup" >AKTIVITETET TE CILAT NJOFTOHEN/CREGJISTROHEN: </code>
-							 <a href="#!" id="ploteso3" class="waves-effect waves-light grey darken-3 btn secondary-content" style="text-shadow: 0 2px 0 black;">Vazhdo ne hapin e 3 </a>
+							 <a href="#!" id="ploteso3" class="waves-effect waves-light grey darken-3 btn secondary-content" style="text-shadow: 0 2px 0 black;">Vazhdo ne hapin 3 </a>
 						</div>
 						<br>
 						<div id="form3" action="#">
@@ -239,7 +223,7 @@
 
 				<div class="collection-item">
 			 <code  class=" language-markup" >PERSHKRIMI I AKTIVITETIT DHE FAZA E OFRIMIT </code>
-						<a href="#!" id="ploteso4" class="waves-effect waves-light grey darken-3 btn secondary-content" style="text-shadow: 0 2px 0 black;">Vazhdo ne hapin e 4</a>
+						<a href="#!" id="ploteso4" class="waves-effect waves-light grey darken-3 btn secondary-content" style="text-shadow: 0 2px 0 black;">Vazhdo ne hapin 4</a>
 				 </div>
 				 <br>
 				 <div id="form4" action="#">
@@ -262,12 +246,12 @@
 
 			 <div class="collection-item">
 	 <code  class=" language-markup">DOKUMENTAT E BASHKANGJITURA: </code>
-					 <a href="#!" id="ploteso5" class="waves-effect waves-light grey darken-3 btn secondary-content" style="text-shadow: 0 2px 0 black;">Vazhdo ne hapin e 5 </a>
+					 <a href="#!" id="ploteso5" class="waves-effect waves-light grey darken-3 btn secondary-content" style="text-shadow: 0 2px 0 black;">Vazhdo ne hapin 5 </a>
 				</div>
 				<br>
 				<div id="form5">
 					<div class="row">
-		<form class="col s12">
+		<div class="col s12">
 			 <div class="row">
 					<label>&nbsp;&nbsp;&nbsp;&nbsp;<font color="black">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Kopje e Certifikates se Regjistrimit te Biznesit</font></label><br><br>
 					<div class="file-field input-field">
@@ -311,7 +295,7 @@
 		<div class="collection waves-color-demo">
 			<div class="collection-item">
 			<code  class=" language-markup">KONFIRMIMI I NJOFTIMIT: </code>
-					<a href="#!" id="ploteso6" class="waves-effect waves-light grey darken-3 btn secondary-content" style="text-shadow: 0 2px 0 black;">Vazhdo ne hapin e 6  </a>
+					<a href="#!" id="ploteso6" class="waves-effect waves-light grey darken-3 btn secondary-content" style="text-shadow: 0 2px 0 black;">Vazhdo ne hapin 6  </a>
 			 </div>
 			 <br>
 			 <div id="form6">
@@ -328,14 +312,38 @@
 							 </div><br>
 
   <p><input class="with-gap" name="group1" type="radio" id="test5"/>
-    <label  id="pranoj" for="test5">&nbsp;&nbsp;&nbsp;&nbsp;Pranoj Kushtet duke klikuar <a id="ketu" href="#">ketu</a></label>
+    <label  id="pranoj" for="test5">&nbsp;&nbsp;&nbsp;&nbsp;Pranoj Kushtet duke klikuar <a id="ketu"> KETU</a></label>
   </p>
 
 <br>
 <button class="grey darken-3 btn first-content" style="text-shadow: 0 2px 0 black;"  id="submit" type="submit">Dergo</button>
-	</form>
+	</div>
 		</div>
       </div>
+				</div>
+					</form>
+							</div>
+							<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+						 <script type="text/javascript" src="{{url_for('static' , filename='materialize.min.js')}}"></script>
+						 <script type="text/javascript" src="{{ url_for('static', filename='jquery.js') }}"></script>
+						 <script type="text/javascript" src="{{ url_for('static', filename='jqueryvalidation.js') }}">
+
+						 $(document).ready(function() {
+						 	      $("#validimi").validate({
+						 	        emri_ndermarresit: {
+						 	          name: "required",// simple rule, converted to {required:true}
+						 	          emri_ndermarresit: {// compound rule
+						 	          required: true,
+						 	          emri_ndermarresit: true
+						 	        },
+						 	        },
+						 	        messages: {
+												emri_ndermarresit: "Shtyp emrin e ndermarresit" ,
+						 	        }
+						 	      });
+						 	    });
+						 </script>
+
 			<script>
 $(document).ready(function(){
     $("#ploteso1").click(function(){
@@ -359,6 +367,120 @@ $(document).ready(function(){
 		$("#ketu").click(function(){
 			alert("une nepermjet ketij dokumenti deklaroj se do te ushtroj aktivitet ne fushen e komunikimeve elektronike te shenuara me siper dhe aplikoj per regjistrim ne regjistrin e ofruesve te rrjeteve dhe sherbimeve te  komunikimeve elektronike te Autoritetit (ARKEP). une permes ketij dokumenti deklaroj se kam mbyllur aktivitetet e komunikimeve elektronike te shenuara me siper une nepermjet ketij dokumenti deklaroj se kam mbyllur qdo aktivitet te komunikimeve elektronike nen regjimin e Autorizimit te pergjithshem. une nepermjet ketij dokumenti deklaroj se te dhenat e mia kane pesuar ndryshime , sikurse pershkruhen ne formular. une nepermjet ketij dokumenti deklaroj se kam ndryshuar formen ligjore te ndermarrjes sime siq pershkruhet ne formular. Emri i vjeter eshte si me poshte. ");
 		});
+});
+$(document).ready(function(){
+ $("#formaRegjistrimit").validate({
+ rules: {
+   emri_ndermarresit: {
+     required: true,
+     minlength: 3,
+   } ,
+	 nr_biznesit: {
+		 required: true ,
+		 minlength: 4 ,
+	 },
+	 nr_fiskal: {
+		 required: true ,
+		 minlength: 7 ,
+	 },
+	 adresa: {
+		 required: true ,
+		 minlength:5 ,
+	 },
+	 nr_tel: {
+		 required: true ,
+		 minlength: 9 ,
+	 } ,
+	 nr_faks: {
+		 required: true ,
+		 minlength: 5 ,
+	 } ,
+	 email:{
+		 required: true,
+		 email: true ,
+	 } ,
+	 emri_zyrtarit: {
+		 required: true ,
+		 minlength: 3 ,
+	 },
+	 adresa_2: {
+		 required: true ,
+		 minlength: 5 ,
+	 },
+	 nr_tel2: {
+		 required: true ,
+		 minlength: 9 ,
+	 },
+	 nr_faks2: {
+		 required: true ,
+		 minlength: 5 ,
+	 } ,
+	 email2: {
+		 required: true ,
+		 email: true ,
+	 } ,
+	 nr_ID: {
+		 required: true ,
+		 minlength: 4 ,
+	 } ,
+},
+
+ messages: {
+					 emri_ndermarresit:{
+							 required: "Ju Lutemi , Shkruani emrin e Ndermarresit",
+							 minlength: "Na falni ju duhet ti shtypni me shume se 3 karaktere" ,
+							 success: "Ju keni mbushur fushen me sukses "
+					 },
+					 nr_biznesit:{
+						 required: "Ju Lutemi , Shkruani numrin e biznesit  " ,
+						 minlength: "Na falni ju duhet ti shtypni me shume se 4 numra"
+					 },
+					 nr_fiskal:{
+						 required: "Ju lutemi , Shkruani numrin Fiskal" ,
+						 minlength: "Na falni ju duhet ti shtypni me shume se 7 numra"
+					 } ,
+					 adresa: {
+						 required: " Ju lutemi , Shtypeni adresen ",
+						 minlength: " Na falni ju duhet ti shtypni me shum se 5 karaktere"
+					 },
+					 nr_tel:{
+						 required: " Ju lutemi , Shtypeni numrin e telefonit",
+						 minlength: " Na falni ju duhet ti shtypni me se paku 9 numra"
+					 },
+					 nr_faks:{
+						 required: " Ju lutemi , Shtypeni numrin e faksit" ,
+						 minlength: " Na falni ju duhet ti shtypni me se paku 5 numra"
+					 },
+					 email:{
+						 required: " Ju lutemi , Shtypeni numrin e faksit " ,
+						 email: " Ju lutemi , Shtypeni nje email adress valide "
+					 	},
+						emri_zyrtarit:{
+							required: " Ju lutemi , Shtypeni emrin e zyrtarit " ,
+							minlength: "Na falni ju duhet ti shtypni me se paku 3 karaktere"
+						},
+						adresa_2: {
+							required: " Ju lutemi  , Shtypeni adresen " ,
+							minlength: " Na falni ju duhet ti shtypni me shume se 5 karaktere"
+						},
+						nr_tel2: {
+							required: " Ju lutemi , Shtypeni adresen " ,
+							minlength:  " Na falni ju duhet ti shtypeni me shume se 9 numra "
+						},
+						nr_faks2: {
+							required: " Ju lutemi , Shtypeni numrin e faksit" ,
+							minlength: " Na falni ju duhet ti shtypni me se paku 5 numra "
+						},
+						email2:{
+							required: " Ju lutemi , Shtypeni numrin e faksit " ,
+							email: " Ju lutemi , Shtypeni nje email adress valide "
+						 },
+						 nr_ID:{
+							 required: " Ju lutemi , Shtypeni numrin e ID-se" ,
+							 minlength: " Na falni ju duhet ti shtypni me se paku 4 numra"
+						 }
+				 }
+});
 });
 </script>
    </body>
