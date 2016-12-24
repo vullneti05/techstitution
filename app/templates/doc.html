@@ -1,6 +1,76 @@
 {% extends 'layout.html' %}
 
 {% block content %}
+<style>
+body{
+  background-color: black;
+  color: white;
+}
+#rez{
+  padding-top:3%;
+  width:800px;
+  margin-left:40%;
+  font-size:16px;
+  font-family: fantasy;
+}
+#logo{
+  margin-left:35%;
+  margin-top:40px;
+}
+#footer{
+   background-color: #0f1d2e;
+   letter-spacing: 1.5px;
+   padding-top: 0.1px;
+   padding-bottom: 5px;
+   border-radius:5px;
+   padding-right:20px;
+ }
+
+   #footercr{
+     font-size: 12px;
+     color:white;
+     text-shadow: 2px 0 2px black;
+
+   }
+</style>
+<img id="logo" src="{{ url_for('static', filename='images/logo.png')}}"><br><br>
+<div id="rez">
 Rezultati i kerkuar:
-{{ doc }}
+<br><br>
+<table>
+{{ doc['emri_ndermarresit'] }}
+<br>
+{{doc['adresa']}}
+<br>
+{{ doc['nr_biznesit']}}
+<br>
+{{ doc['nr_fiskal']}}
+<br>
+{{ doc['adresa']}}
+<br>
+{{ doc['nr_tel']}}
+<br>
+{{ doc['nr_faks']}}
+<br>
+{{ doc['email']}}
+<br>
+{{ doc['emri_zyrtarit']}}
+<br>
+{{ doc['adresa_2']}}
+<br>
+{{ doc['nr_tel2']}}
+<br>
+{{ doc['nr_faks2']}}
+<br>
+{{ doc['email2']}}
+<br>
+{{ doc['nr_ID']}}
+<br>
+{{ doc['availability']}}
+<br>
+
+</div>
+
+{%block footer%}
+{%endblock%}
 {% endblock %}

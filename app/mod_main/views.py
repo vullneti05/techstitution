@@ -26,9 +26,9 @@ def get_doc(id):
     db = mongo.db.arkep
 
     if request.method == 'GET':
-        doc = db.find({"_id":ObjectId(id)})
+        doc = db.find_one({"_id":ObjectId(id)})
         doc_json = json_util.dumps(doc)
-        return  render_template('doc.html' , doc=doc_json)
+        return  render_template('doc.html' , doc=doc)
     else:
         return "bat request"
 

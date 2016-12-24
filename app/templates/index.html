@@ -2,6 +2,7 @@
 <head>
 
 	<head>
+
 		<title>Formulari</title>
 		 <!--Import Google Icon Font-->
 		 <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
@@ -13,10 +14,13 @@
 
 </head>
 <body class="container">
-
-		<img id="logo" src="{{ url_for('static', filename='images/logo.png')}}"><br><br>
 	<div id="wrapper">
-		<font color="#ffffff"><p id="nentitulli">Formular i Njoftimit per Hyrje ne aktivitetin e Komunikimeve Elektronike</p></font>
+	{%block images%}
+	<img id="logo" src="{{ url_for('static', filename='images/logo.png')}}"><br><br>
+	{%endblock%}
+	 <font color="#ffffff"><p id="nentitulli">Formular i Njoftimit per Hyrje ne aktivitetin e Komunikimeve Elektronike</p></font>
+
+
 		<form id="formaRegjistrimit" method="POST">
 	    <div class="collection waves-color-demo">
 				<div class="collection-item">
@@ -53,7 +57,7 @@
 				 			<div class="collection-item">
 				 			<code  class=" language-markup">TE DHENAT PER ZYRTARIN LIGJERISHT TE PERGJEGJESHEM: </code>
 							<a href="#!" id="ploteso2" class="waves-effect waves-light grey darken-3 btn secondary-content" style="text-shadow: 0 2px 0 black;">Vazhdo ne Hapin 2 </a>
-							</div>
+						</div>
 				 <br>
 							<div id="form2">
 							<div class="input-field col s6">
@@ -82,7 +86,8 @@
 						</div>
 						<br>
 						<div id="form3" action="#">
-				  <table>
+				  <table id="tabela">
+
 				    <thead>
 				      <tr>
 
@@ -95,17 +100,11 @@
 				        <td>Ofrimi i rrjetit publik fiks</td>
 				        <td>
 									<label>
-										<input type="checkbox" class="filled-in checkbox-orange" id="filled-in-box1" />
-										<label for="filled-in-box1">Lokal</label>
-									</label>
-									<br>
-									<label>
-										<input type="checkbox" class="filled-in checkbox-orange" id="filled-in-box2" />
-											<label for="filled-in-box2">Nacional</label>
-										</label>
-										<br>
-										<label>
-											<input type="checkbox" class="filled-in checkbox-orange" id="filled-in-box3"  />
+										<input type="checkbox" name="availability" class="filled-in checkbox-orange" id="filled-in-box1" />
+										<label for="filled-in-box1">Lokal</label><br>
+										<input type="checkbox" name="availability" class="filled-in checkbox-orange" id="filled-in-box2" />
+											<label for="filled-in-box2">Nacional</label><br>
+											<input type="checkbox" name="availability" class="filled-in checkbox-orange" id="filled-in-box3"  />
 												<label for="filled-in-box3">Tjera ( Specifikoj )</label>
 											</label>
 								</td>
@@ -201,7 +200,7 @@
 								<td>Ofrimi i sherbimeve te transmetimit te te dhenave (Internetit)</td>
 								<td>
 									<label>
-										<input type="checkbox" class="filled-in checkbox-orange" id="filled-in-box15"  />
+										<input type="checkbox" class="filled-in checkbox-orange" name="checkii" id="filled-in-box15"  />
 										<label for="filled-in-box15"> Ofrimi i sherbimeve publike te transmetimit te te dhenave (internetit)</label>
 									</label>
 								</td>
@@ -316,11 +315,17 @@
   </p>
 
 <br>
-<button class="grey darken-3 btn first-content" style="text-shadow: 0 2px 0 black;"  id="submit" type="submit">Dergo</button>
+<button class="grey darken-3 btn first-content" onsubmit="return validate()" style="text-shadow: 0 2px 0 black;"  id="submit" type="submit">Dergo</button>
 	</div>
 		</div>
       </div>
 				</div>
+				<div id="#triangle-bottomright"></div>
+				<div id="footer">
+					<p id="footercr" style="text-align:center">Të gjitha të drejtat e rezervuara <hr></p>
+					<p id="footercr" style="text-align:center">	Autoriteti Rregullativ i Komunikimeve Elektronike dhe Postare 2012</p>
+				</div>
+
 					</form>
 							</div>
 							<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
@@ -343,7 +348,21 @@
 						 	      });
 						 	    });
 						 </script>
+<script type="text/javascript">
 
+	function validate(){
+		var checkat = document.getElementsByClassName('checkbox-orange');
+
+		for(var i=0;i<=checkat;i++){
+			if(checkat[i].checked != true){
+				alert('o vullnet!!');
+				return false;
+			}
+		}
+
+	}
+
+</script>
 			<script>
 $(document).ready(function(){
     $("#ploteso1").click(function(){
@@ -367,8 +386,10 @@ $(document).ready(function(){
 		$("#ketu").click(function(){
 			alert("une nepermjet ketij dokumenti deklaroj se do te ushtroj aktivitet ne fushen e komunikimeve elektronike te shenuara me siper dhe aplikoj per regjistrim ne regjistrin e ofruesve te rrjeteve dhe sherbimeve te  komunikimeve elektronike te Autoritetit (ARKEP). une permes ketij dokumenti deklaroj se kam mbyllur aktivitetet e komunikimeve elektronike te shenuara me siper une nepermjet ketij dokumenti deklaroj se kam mbyllur qdo aktivitet te komunikimeve elektronike nen regjimin e Autorizimit te pergjithshem. une nepermjet ketij dokumenti deklaroj se te dhenat e mia kane pesuar ndryshime , sikurse pershkruhen ne formular. une nepermjet ketij dokumenti deklaroj se kam ndryshuar formen ligjore te ndermarrjes sime siq pershkruhet ne formular. Emri i vjeter eshte si me poshte. ");
 		});
+
 });
 $(document).ready(function(){
+
  $("#formaRegjistrimit").validate({
  rules: {
    emri_ndermarresit: {
@@ -378,10 +399,6 @@ $(document).ready(function(){
 	 nr_biznesit: {
 		 required: true ,
 		 minlength: 4 ,
-	 },
-	 nr_fiskal: {
-		 required: true ,
-		 minlength: 7 ,
 	 },
 	 adresa: {
 		 required: true ,
@@ -423,8 +440,11 @@ $(document).ready(function(){
 		 required: true ,
 		 minlength: 4 ,
 	 } ,
-},
+	 nje: {
+		 required: true ,
+	 } ,
 
+},
  messages: {
 					 emri_ndermarresit:{
 							 required: "Ju Lutemi , Shkruani emrin e Ndermarresit",
@@ -435,10 +455,6 @@ $(document).ready(function(){
 						 required: "Ju Lutemi , Shkruani numrin e biznesit  " ,
 						 minlength: "Na falni ju duhet ti shtypni me shume se 4 numra"
 					 },
-					 nr_fiskal:{
-						 required: "Ju lutemi , Shkruani numrin Fiskal" ,
-						 minlength: "Na falni ju duhet ti shtypni me shume se 7 numra"
-					 } ,
 					 adresa: {
 						 required: " Ju lutemi , Shtypeni adresen ",
 						 minlength: " Na falni ju duhet ti shtypni me shum se 5 karaktere"
@@ -467,10 +483,6 @@ $(document).ready(function(){
 							required: " Ju lutemi , Shtypeni adresen " ,
 							minlength:  " Na falni ju duhet ti shtypeni me shume se 9 numra "
 						},
-						nr_faks2: {
-							required: " Ju lutemi , Shtypeni numrin e faksit" ,
-							minlength: " Na falni ju duhet ti shtypni me se paku 5 numra "
-						},
 						email2:{
 							required: " Ju lutemi , Shtypeni numrin e faksit " ,
 							email: " Ju lutemi , Shtypeni nje email adress valide "
@@ -478,7 +490,7 @@ $(document).ready(function(){
 						 nr_ID:{
 							 required: " Ju lutemi , Shtypeni numrin e ID-se" ,
 							 minlength: " Na falni ju duhet ti shtypni me se paku 4 numra"
-						 }
+						 },
 				 }
 });
 });
