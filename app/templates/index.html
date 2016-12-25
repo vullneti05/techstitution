@@ -315,7 +315,7 @@
   </p>
 
 <br>
-<button class="grey darken-3 btn first-content" onsubmit="return validate()" style="text-shadow: 0 2px 0 black;"  id="submit" type="submit">Dergo</button>
+<button class="grey darken-3 btn first-content" onsubmit="return validate()" style="text-shadow: 0 2px 0 black;"  <a href="test.html" id="submit" type="submit">Dergo</button></a>
 	</div>
 		</div>
       </div>
@@ -333,38 +333,28 @@
 						 <script type="text/javascript" src="{{ url_for('static', filename='jquery.js') }}"></script>
 						 <script type="text/javascript" src="{{ url_for('static', filename='jqueryvalidation.js') }}">
 
-						 $(document).ready(function() {
-						 	      $("#validimi").validate({
-						 	        emri_ndermarresit: {
-						 	          name: "required",// simple rule, converted to {required:true}
-						 	          emri_ndermarresit: {// compound rule
-						 	          required: true,
-						 	          emri_ndermarresit: true
-						 	        },
-						 	        },
-						 	        messages: {
-												emri_ndermarresit: "Shtyp emrin e ndermarresit" ,
-						 	        }
-						 	      });
-						 	    });
+
 						 </script>
 <script type="text/javascript">
-
-	function validate(){
-		var checkat = document.getElementsByClassName('checkbox-orange');
-
-		for(var i=0;i<=checkat;i++){
-			if(checkat[i].checked != true){
-				alert('o vullnet!!');
-				return false;
-			}
-		}
-
-	}
 
 </script>
 			<script>
 $(document).ready(function(){
+	$('INPUT[type="file"]').change(function () {
+    var ext = this.value.match(/\.(.+)$/)[1];
+    switch (ext) {
+        case 'jpg':
+				case 'pdf':
+        case 'jpeg':
+        case 'png':
+        case 'gif':
+            $('#submit').attr('disabled', false);
+            break;
+        default:
+            alert('Ky Fajll nuk eshte i Lejuar nga Serveri.');
+            this.value = '';
+    }
+});
     $("#ploteso1").click(function(){
         $("#form1").slideToggle("slow");
     });
